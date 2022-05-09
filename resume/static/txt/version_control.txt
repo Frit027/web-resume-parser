@@ -1,0 +1,44 @@
+accurev
+arx
+autodesk vault
+bazaar
+bitkeeper
+cades
+cmvc
+code co-op
+concurrent versions system
+cvs
+cvsnt
+darcs
+dcvs
+dimensions cm
+fossil
+git
+gnu arch
+helix core
+ibm configuration management version control
+ibm rational clearcase
+ibm rational synergy
+ibm rational team concert
+mercurial
+monotone
+opencvs
+panvalet
+plastic scm
+ptc integrity
+pvcs
+quma version control system
+razor
+rcs
+revision control system
+sccs
+source code control system
+starteam
+subversion
+sun workshop teamware
+surround scm
+svn
+team foundation version control
+vault
+vesta
+visual sourcesafe

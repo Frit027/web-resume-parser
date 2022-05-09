@@ -1,0 +1,201 @@
+4th dimension
+access database engine
+adabas d
+aerospike
+aerospike dbs
+airtable
+allegrograph
+alphora dataphor
+altibase
+altibase hdb
+altibase xdb
+amazon aurora
+amazon neptune
+anzograph db
+apache derby
+apache ignite
+apache openoffice base
+arangodb
+arcadedb
+aster data
+azure sql
+basex
+britton lee idms
+ca datacom
+ca idms
+caché
+clarion
+clickhouse
+cloudant
+clusterpoint database
+clustrix
+cockroachdb
+cornerstone
+cosmos db
+couchbase server
+couchdb
+crateio
+csql
+cubrid
+database management library
+datablitz
+dataease
+dataflex
+dataphor
+datastax enterprise graph
+dbase
+dbms
+derby
+dgraph
+dm/basisplus
+documentdb
+ehcache
+elasticsearch
+empress embedded database
+enterprisedb
+exasol
+exist
+extensible storage engine
+extremedb
+filemaker pro
+firebird
+firebird sql
+frontbase
+google fusion tables
+greenplum
+grovesite
+h2
+hazelcast
+hcl notes
+helix
+hsqldb
+ibm business system 12
+ibm db2
+ibm lotus approach
+ibm sql/ds
+ibm system r
+infinitegraph
+infinitydb
+infobright
+informix
+informix warehouse accelerator
+ingres
+interbase
+intersystems caché
+intersystems iris data platform
+jackrabbit
+janusgraph
+kinetica
+libreoffice base
+linter
+mariadb
+marklogic
+maxdb
+memcached
+memsql
+micro relational database management system
+microsoft access
+microsoft com+ imdb
+microsoft sql server
+microsoft sql server express
+microsoft visual foxpro
+mimer sql
+mnesia
+monetdb
+mongodb
+ms sql
+msql
+mssql
+mumps database
+mysql
+mysql ndb cluster
+nebula graph
+neo4j
+netezza
+nexusdb
+nonstop sql
+nuodb
+objectdatabase++
+omnis studio
+omnisci
+ontotext graphdb
+openlink virtuoso
+openlink virtuoso universal server
+openoffice.org base
+oracle
+oracle coherence
+oracle nosql database
+oracle property graph
+oracle rdb for openvms
+oracle rdbms
+oracle rdf graph
+orientdb
+panorama
+paradox
+percona server for mysql
+percona xtradb cluster
+perst
+pervasive psql
+pick
+polyhedra
+postgres plus advanced server
+postgresql
+progress software
+prtv
+qbe
+qizx
+r:base
+raima
+raima database manager
+rdfox
+rdm
+rdm server
+redis
+redisgraph
+redisjson
+rel
+rethinkdb
+safepeak
+sand cdbms
+sap adaptive server enterprise
+sap advantage database server
+sap hana
+sap iq
+sedna
+simpledb
+singlestore
+snowflake cloud data warehouse
+soliddb
+sparksee
+sql anywhere
+sql azure
+sql ce
+sqlbase
+sqlite
+sqream db
+sqrrl enterprise
+starbase
+starcounter
+stardog
+sybase sql server
+tarantool
+teradata
+teradata aster
+terminusdb
+tibco graph database
+tibero
+tidb
+tigergraph
+timesten
+tokumx
+tpf
+trafodion
+typedb
+unidata
+unisys rdms 2200
+universe
+vectorwise
+vertica
+voltdb
+xeround
+yugabytedb

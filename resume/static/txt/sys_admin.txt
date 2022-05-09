@@ -1,0 +1,53 @@
+active directory
+asterisk
+bitlocker
+cisco
+cisco anyconnect
+d-link
+dallas lock
+ddns
+dhcp
+dionis nx
+dns
+dr.web
+emclient
+freepbx
+ftp
+hikconnect
+hyper-v
+iis
+imap
+iptables
+kaspersky labs
+kaspersky security center
+lan
+mfa
+mikrotik
+multi-factor authentication
+nas
+nat
+netgear
+openvpn
+outlook
+pop3
+rdp
+safeq
+sccm
+secret net studio
+sip
+smtp
+system center configuration manager
+tcp/ip
+teamviewer
+thunderbird
+tp link
+utp
+vdi
+virtual box
+virtual desktop infrastructure
+vmware
+vpn
+wan
+wsus
+xen
+zyxel

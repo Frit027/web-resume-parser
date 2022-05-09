@@ -1,0 +1,89 @@
+abc notation
+amigaguide
+asciidoc
+asciidoctor
+c-html
+cml
+compound document format
+computable document format
+context
+dita
+docbook
+ead
+elml
+enriched text
+extensible 3d
+gml
+gnu texmacs format
+guideml
+hdml)
+helpml
+html
+html5
+hypertex
+hytime
+ipf
+jats
+kml
+kml/kmz
+kmz
+latex
+lilypond
+linuxdoc
+lout
+maml
+markdown
+mathml
+mei
+microsoft office 2003 xml formats
+mif
+musicxml
+odf
+office open xml
+omdoc
+ooxml
+opendocument
+openmath
+openoffice.org xml
+parameter value language
+pillar
+pod)
+presentationml
+reportml
+restructuredtext
+revisable-form text
+rft
+rich text format
+rtf
+rtml
+s1000d
+scribble
+scribe
+script
+sgml
+sisu
+skical
+skriv
+spreadsheetml
+svg
+tei
+tex
+texinfo
+textile
+tmml
+troff
+udo
+uniform office format
+uof
+wiki markup
+wml
+wordprocessingml
+wtvml
+x3d
+xaml
+xhtml
+xhtml basic
+xhtml mobile profile
+xhtml mp
+xml
+xupl

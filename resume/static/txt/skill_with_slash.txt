@@ -1,0 +1,23 @@
+a/b
+aida/web
+c/al
+ci/cd
+easy pl/i
+foxbase/foxpro
+hal/s
+mad/i
+orca/modula-2
+pari/gp
+pl/0
+pl/b
+pl/c
+pl/i
+pl/m
+pl/p
+pl/s
+pl/sql
+rtl/2
+s/sl
+sp/k
+tcp/ip
+ux/ui

@@ -1,0 +1,322 @@
+accelerate
+accessibility
+accodesnippetrepository
+accounts
+address book
+address book ui
+adservices
+adsupport
+agl
+alamore
+alcatraz
+alltargets
+app clips
+app store connect api
+app store receipts
+app store server api
+app store server notifications
+app tracking transparency
+appcode
+appkit
+apple archive
+apple cryptokit
+apple music api
+apple news
+apple pay on the web
+apple pay web merchant registration api
+apple search ads
+apple silicon
+application services
+arkit
+assets library
+audio toolbox
+audio unit
+audiodriverkit
+authentication services
+autolayout
+automatic assessment configuration
+automator
+autoresize mask
+avfaudio
+avfoundation
+avkit
+background tasks
+blockstoragedevicedriverkit
+brightfutures
+bundle resources
+callkit
+carekit
+carplay
+catweaker
+cfnetwork
+cktool js
+classkit
+classkit catalog api
+clockkit
+cloudkit
+cloudkit js
+cocoa touch
+cocoapods
+cocos2d
+code pilot
+code runner
+collaboration
+colorsync
+combine
+compression
+contacts
+contacts ui
+copilot
+core animation
+core audio
+core audio kit
+core audio types
+core bluetooth
+core data
+core foundation
+core graphics
+core haptics
+core image
+core location
+core location ui
+core media
+core media i/o
+core midi
+core ml
+core motion
+core nfc
+core services
+core spotlight
+core telephony
+core text
+core video
+core wlan
+coredata
+coregraphics
+crayons
+create ml
+cryptotokenkit
+darwin notify
+dash
+developer tools support
+device activity
+device management
+devicecheck
+disk arbitration
+dispatch
+dnssd
+docc
+driverkit
+endpoint security
+eventkit
+eventkit ui
+exception handling
+execution policy
+exposure notification
+external accessory
+family controls
+fastlane
+file provider
+file provider ui
+finder sync
+force feedback
+foundation
+fuzzy autocomplete
+fwauserlib
+game controller
+gamekit
+gameplaykit
+gitdiff
+glkit
+group activities
+grpc
+gss
+healthkit
+hiddriverkit
+hksnippet
+homekit
+http live streaming
+human interface guidelines
+hypervisor
+iad
+image i/o
+imagecapturecore
+injection for xcode
+inputmethodkit
+installer js
+iobluetooth
+iobluetooth ui
+iokit
+ios & ipados release notes
+iosurface
+iousbhost
+itunes library
+javascriptcore
+jenkins ci
+jgprogresshud
+kernel
+kernel management
+kpruneverywherexcodeplugin
+ksimagenamed
+kzlinkedconsole
+latent semantic mapping
+link presentation
+livephotoskit js
+local authentication
+local authentication embedded ui
+mac catalyst
+macos release notes
+mailkit
+managed settings
+managed settings ui
+mapkit
+mapkit js
+maps web snapshots
+marvinxcode
+media accessibility
+media library
+media player
+media setup
+message ui
+messagekit
+messages
+metal
+metal performance shaders
+metal performance shaders graph
+metalkit
+metrickit
+ml compute
+model i/o
+multipeer connectivity
+musickit
+musickit js
+natural language
+nearby interaction
+network
+network extension
+networkingdriverkit
+newsstandkit
+notification center
+objective-c runtime
+open directory
+opengl es
+os
+oslog
+paravirtualized graphics
+passkit (apple pay and wallet)
+pcidriverkit
+pdfkit
+peckham
+pencilkit
+phase
+photokit
+playground bluetooth
+playground support
+preference panes
+professional video applications
+promisekit
+proximityreader
+pushkit
+quartz
+quick & nimble
+quicklook
+quicklook thumbnailing
+quicklook ui
+realitykit
+realm
+refactorator
+remote
+replaykit
+rtimageassets
+rxswift
+safari app extensions
+safari release notes
+safari services
+scenekit
+screen saver
+screen time
+screencapturekit
+scripting bridge
+scsicontrollerdriverkit
+scxcode minimap
+sdebimage
+security
+security foundation
+security interface
+sensorkit
+serialdriverkit
+service management
+shazamkit
+showingithub
+sign in with apple
+simd
+siri event suggestions markup
+sirikit
+sirikit cloud media
+sms and call reporting
+snapkit
+social
+sound analysis
+speech
+spritekit
+storekit
+storekit test
+swift
+swift packages
+swift playgrounds
+swift standard library
+swiftgen
+swiftlint
+swifttoolbox
+swiftui
+swifty
+swiftyjson
+system
+system configuration
+system extensions
+tabular data
+technotes
+the foundation framework
+thread network
+trending cocoa pods
+tv services
+tvml
+tvmlkit
+tvmlkit js
+tvos release notes
+tvuikit
+uikit
+uniform type identifiers
+unity3d
+usbdriverkit
+usbserialdriverkit
+user notifications
+user notifications ui
+video subscriber account
+video toolbox
+virtualization
+vision
+visionkit
+vmnet
+vwinstantrun
+wallet passes
+watch connectivity
+watchkit
+watchos
+watchos release notes
+webkit
+webkit js
+widgetkit
+xcaddedmarkup
+xcfui
+xcode
+xcode bots
+xcode cloud
+xcode colors
+xcode release notes
+xcodeboost
+xcodekit
+xcselect
+xctest
+xpc
+xtodo

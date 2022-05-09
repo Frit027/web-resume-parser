@@ -1,0 +1,38 @@
+3ds max
+adobe illustrator
+adobe photoshop
+ar
+ar core
+arcore
+autocad
+autodesk 3ds max
+blender
+blueprints
+cinema4d
+construct 3
+coreldraw graphics suite
+coreldraw photo draw
+htc vive
+illustrator
+leoecs
+level sequence
+material layers
+mirror
+oculus
+opengl
+particlesystem
+photoshop
+post process
+substance painter
+ui
+unity
+unity 3d
+unity3d
+unreal engine
+unreal engine 4
+unreal engine 5
+ux/ui
+virtual texture
+vr
+vuforia
+widget blueprints

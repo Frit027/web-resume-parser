@@ -1,0 +1,79 @@
+accord.net
+airflow
+altair
+apache airflow
+apache kafka
+apache mahout
+apache presto
+apache spark
+azure databricks
+bigquery
+caffe
+catboost
+colab
+computer vision
+coreml
+dask
+databricks
+deep learning
+dplyr
+dsgan
+feedforward neural network
+ggplot2
+h2o.ai
+kafka
+keras
+keras.io
+knime
+lama
+lightautoml
+lightgbm
+mathematical analysis
+matplotlib
+mlflow
+mlr
+nlp
+numpy
+nvidia dali
+object tracking
+ocr
+openai
+opencv
+pandas
+plotly
+plotly.express
+power bi
+powerbi
+prefect
+presto
+pymc
+pymc3
+pytorch
+random forest
+rapidminer
+readr
+recurrent neural networks
+redash
+rnn
+scikit-learn
+scipy
+seaborn
+shiny
+shogun
+sklearn
+spacy
+spark
+statsmodels
+sympy
+tableau
+tensor flow
+tensorflow
+theano
+tidyr
+torch
+weka
+word2vec
+xgboost
+yolo
+yolov3
+сonvolutional neural network

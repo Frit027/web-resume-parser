@@ -1,0 +1,1351 @@
+3anoppix
+64 studio
+86-dos
+a/ux
+absolute linux
+abulédu
+acados
+accord.net
+acp
+adamantix
+adaos
+adios
+adler linux
+admelix
+admiral
+admiral linux
+adrenaline
+aerolitheos
+agnula
+aimos
+aios
+airflow
+aix
+aix/370
+aix/esa
+alcolix
+aleris operating system
+alinex
+alinux
+alixe
+allegro
+allianceos
+alpha os
+alpine linux
+alt linux
+altair
+alto os
+amarok live
+amber
+amiga os
+amoeba
+amstrad
+amx rtos
+andlinux
+android
+android things
+aneeda
+angelos
+ankur
+annvix
+annyung
+anonym.os
+antarctica
+antemium
+antix
+aos/vs
+apache airflow
+apache kafka
+apache mahout
+apache presto
+apache spark
+aperios
+apodio
+apollo domain/os
+apolloos
+apostle
+apricity os
+aquamorph
+arabian
+arch linux
+archbang
+archeos
+archie
+archimedes os
+ark linux
+armed linux
+aros
+artistx
+artos
+arudius
+asbestos
+asianlinux
+asianux
+asork
+asp linux
+astaro
+asterisknow
+asteroidos;wear os
+athena
+athene
+atheos
+atmission
+atomix
+atomsnet
+atomthreads
+augustux
+aurora
+auroraos
+aurox
+austrumi
+autosense os
+azure databricks
+b-free
+b2d
+babeldisc
+backtrack
+bada
+bal
+baltix
+banyan vines
+basic executive system
+bayanihan
+bearops linux
+beatrix linux
+beehive linux
+beia
+belenix
+bent linux
+beos
+beowulf
+berry linux
+bestlinux
+big linux
+bigquery
+bintoo
+biobrew
+bioknoppix
+bky
+black cat linux
+blackberry os
+blackpanther
+blag
+blin linux
+bloody stupid
+blue cat linux
+blueeyedos
+bluelinux
+bluewall
+bodhi linux
+bonzai linux
+bootable cluster cd
+bos
+bos1810
+boxos
+bpmk
+brillo
+brix
+bs2000
+bs600
+bsdi
+bu linux
+buffalo
+bugnux
+bugos
+burapha
+byzantineos
+c executive
+caffe
+caixa mágica
+caldera linux
+calmira
+caos
+carl.os
+catboost
+catix
+ccp
+ccux
+cdlinux
+cdos
+cefarix
+censornet
+centos
+chakra
+chaos
+chibios
+chimera
+chippewa os
+choices
+chorus
+chrome os
+chromium os
+cinder os
+cisco ios
+cl33n
+clarkconnect
+clear linux
+clearos
+clefos linux
+clicker32
+clienux
+clip os
+clonezilla live
+clusterix
+clusterknoppix
+cmw+
+co-create
+cobaltos
+cobra
+coherent
+colab
+college
+commodore os vision
+computer vision
+condorux
+conectiva linux
+consensys
+contiki
+convexos
+cool linux cd
+corebiz
+coreboot
+corel linux
+coreml
+coreos
+cos
+cosy
+counterpoise
+coyote
+cp/k
+cp/m
+cp/net
+cp/z
+cpf
+craftworks linux
+cromix
+cronus
+crunchbang
+cruncheee
+crux
+csoc
+ctos
+ctss
+cub linux
+cx/sx
+cygnus
+càtix
+dac
+damn small linux
+damn vulnerable linux
+danix
+darkstar
+darwin
+dask
+data general
+databricks
+dc/osx
+dcp
+debian gnu/linux
+debris linux
+deep learning
+deep-water
+deft linux
+degenerate os
+deli
+delitalk
+delix linux
+dell networking os10
+dell unix
+deming os
+demos
+denix
+desktopbsd
+deskwork
+devil
+dg/ux
+digital unix
+dingos
+dizinha
+dk/dos
+dld
+dnalinux
+dnix
+domain os
+dos
+dos 50
+dos2
+dosket
+dplyr
+dr'ex
+dr-dos
+draco linux
+dragon linux
+dragora
+drbl live
+dreamlinux
+drops
+drywell os
+ds-os
+dsgan
+dtos
+dualix
+dvix
+dynabolic
+dyne:bolic
+dynix unix
+dzongkha
+e/os lx desktop
+eadem
+eagle
+ear os
+easy peasy
+easylinux
+easys
+ecl-3211
+ecomstation
+ecos
+edubuntu
+eduknoppix
+edulinux
+eduos
+egos
+ehad
+eisfair
+ekkobsd
+elate
+elbuntu
+ele
+elearnix
+elementary os
+elf
+elfstone linux
+elinos
+elive
+elks
+elp
+elx
+elysium
+embedix
+endian
+endless os
+engarde
+eos
+ep/ix
+epoc
+erams
+erika
+eros
+erposs
+eser
+esix
+esko
+esware
+eumel
+eunix
+euronode
+evilentity linux
+evinux
+exopc
+exos
+express
+ezplanet one
+famelix
+famos
+faunos
+fdos
+feather
+featherweight
+fedora
+feedforward neural network
+fermi
+ffsearch-livecd
+fiasco
+finnix
+firefox os
+fiubbix
+flamethrower
+flash
+flashos
+flexos
+flightlinux
+flingos
+flonix
+flp-80 dos
+flux
+flux-fluke-flask
+fluxbuntu
+fluxflux-eee
+fms
+foresight
+fork
+formilux
+forth
+fortios
+fox desktop
+freduc
+free-eos
+freebsd
+freedos
+freedows
+freeduc
+freenas
+freepia
+freesbie
+freespire
+freevms
+freevolive
+freezy
+frenzy
+frugalware
+ftosx
+fuchsia
+fullpliant
+funatixos
+fusionsphere
+fxos
+galliumos
+gazos
+gcos
+gecos
+geekos
+geexbox
+gelecek
+gemini nucleus
+genera
+genieos
+gentoo
+gentoox
+geolivre
+george
+geos
+ggplot2
+gibraltar
+ging
+giotto
+glendix
+gm os
+gnewsense
+gnix
+gnoppix
+gnu hurd
+gnubie linux
+gnulinex
+gnustep
+go
+goah
+goblinx
+gobolinux
+goodgoat linux
+gos
+gould os
+gparted
+grafpup
+granular linux
+grapheneos
+grasshopper
+grml
+guadalinex
+guide
+guix
+gulic-bsd
+h2o.ai
+h3knix
+ha-msp
+haansoft
+hactar
+hakin9
+halloween linux
+hancom
+harmony
+harmonyos
+haïku
+hedinux
+helios
+helix
+heretix
+hes
+hikarunix
+hive
+hiweed
+holon
+holon linux
+honeywall
+hongmeng os
+hope
+how-tux
+hp-87 os
+hp-ux
+ht-11
+hubworx
+hurd
+hurricane
+hydrixos
+i5/os
+ibm pc-dos
+ibox
+ibsys
+icaros desktop
+ice linux
+icepack linux
+icl unix
+idms
+igel linux
+igelle
+ignalum
+immunix
+impi
+independence
+indlinux
+inferno
+inmos
+instant webkiosk
+integrity rtos
+ios
+ipcop
+iridium os
+irix
+irmx
+irts
+isc
+isis
+issl
+itron
+its
+jamb
+javaos
+jbed
+jblinux
+jenios
+jeo-os
+jeos
+jibbed
+joli os
+jolicloud
+jolinux
+jos
+jtmos
+julex
+junos
+jurix linux
+juxlala
+jxos
+k linux
+k-demar
+k12ltsp
+kaboot
+kaella
+kafka
+kaios
+kaladix linux
+kalango
+kali linux
+kanotix
+kaos
+karamad
+kaspersky os
+kateos
+katix
+kea
+keras
+keras.io
+kerberos
+keykos
+kinneret
+kiwi linux
+klax
+klikit-linux
+kmlinux
+knime
+knopils
+knoppel
+knopperdisk
+knoppix
+knoppix 64
+knoppixmame
+knoppmyth
+knosciences
+kodibuntu
+kolibrios
+komodo
+kongoni
+korora
+kos
+kronos
+kros
+krud
+kubuntu
+kuki linux
+kurumin
+kwort
+kylin
+l os
+l.a.s.
+l13plus
+l4
+lainos
+lama
+lan manager
+ldos
+leetnux
+legos
+lejos
+lerntux
+lfs
+lg3d
+libranet linux
+librecmc
+lightautoml
+lightgbm
+liis
+lin-x
+linare
+lindowsos
+lineox
+linespa
+linnexos
+linpus
+linspire
+linux
+linux antarctica
+linux by libranet
+linux da os
+linux mint
+linux xp
+linux+ live
+linux-educd
+linux4one
+linuxconsole
+linuxmce
+linuxo
+linuxone
+linuxppc
+linuxtle
+lisa os
+litrix
+livecd router
+livekiosk
+livux
+llgp
+lliurex
+lnx-bbc
+loco
+lormalinux
+lst linux
+ltsp
+ltss
+luc3m
+luit
+lumin os
+lunar
+lutelinux
+lxdebian
+lxle
+lycoris desktop/lx
+lynxos
+m0n0wall
+mac os 8
+mac os 9
+mac os x
+mach
+mageia
+magic
+mandrake
+mandriva
+mangaka
+manos
+marte os
+maruti
+masix
+mathematical analysis
+matplotlib
+maverick os
+max
+maxos
+mayix
+mbos
+mcnlive
+mcp
+mdos
+media lab
+mediainlinux
+meego
+menuetos
+mepis
+merlin
+micriµm
+microdos
+microos
+microsoft windows
+microvms
+midnightbsd
+mikeos
+minikazit
+minima
+minislack
+minix
+minoca os
+minux
+miracle
+miranda
+miray µnos
+miros
+mite 80/ios
+mk++
+mklinux
+mlflow
+mlr
+moblin
+mockup
+modulos
+molinux
+momonga
+monitor
+monoppix
+monte vista linux
+moonos
+mops
+morphix
+morphos
+mos
+mosix
+mostlylinux
+movix
+mpe os
+mpe/ix
+mrt1700
+ms-dos
+msc
+msos
+mt809
+mulimidix
+mulinux
+multi distro
+multics
+mungi
+muriqui
+murix
+musix
+mutagenix
+mutos
+muvinix
+mvs
+mx linux
+myah os
+mylinux
+möbius
+nachos
+nasgaïa
+nature's
+navyn os
+ncr unix
+nec dos
+necux
+nemesis
+neos
+nepalinux
+netbsd
+netmax desktop
+netsecl
+netstation linux
+netware
+netwosix
+newdeal
+newdos
+newos
+news-os
+newton os
+nexenta
+nexentaos
+nextstep
+nextworksos
+nexus
+niigata
+nimblex
+nimbus
+nintendos
+nitix
+nlp
+node os
+nomad linux
+nonux
+nos
+nos/be
+nos/ve
+nova
+novell dos
+ns/gdos
+nsk
+nst
+ntdios
+nubuntu
+nucleus
+nuclinux
+numpy
+nuxone
+nvidia dali
+o-net
+oaesis
+oasis
+oberon
+object tracking
+objex
+ocnos
+ocr
+ocularis
+odin
+ola dom
+omega
+omega 4
+omoikane
+on time rtos-32
+oncore
+onebase linux
+opal
+open progex
+openai
+openartist
+openbeos
+openbsd
+opencv
+opendarwin
+openlab
+openlinux
+openlx
+openmamba
+openmediavault
+openna
+openravenscar
+openserver
+opensolaris
+openvision
+openvms
+openwall
+operator
+oppcos
+oracle linux
+oralux
+os-2
+os-9
+os-c
+os/2
+os/2 warp
+os/360
+os/390
+os/400
+os/9
+os/es
+os/m
+os4
+oscan
+ose
+osf/1
+osx
+osx16
+overclockix
+ozone
+p basic
+p!tux
+paipix
+pakos
+paldo
+palm os
+pandas
+papl
+parabola
+parallelknoppix
+paramecium
+pardus
+parixos
+paros
+parsix
+parsix gnu/linux
+paulos
+pc-bsd
+pc-dos
+pc-mos/386
+pc/m-system
+pc/os
+pclinuxos
+pdos
+peace
+peanut linux
+pebble
+pegasos
+pelicanhpc
+penguin sleuth
+pentoo
+peppermint
+pequelin
+petros
+pfsense
+phaeronix
+phantom os
+phantomix
+phat linux
+phlak
+phos
+pie box
+pikeos
+pilot
+pingo
+pingwinek
+pioneer linux
+pios
+pizzios
+plamo
+plan 9
+pld
+plex86
+plop linux
+plotly
+plotly.express
+pm_sz_os
+pocket linux
+pocketpc 2003
+poseidon
+posted
+power bi
+power desktop
+powerbi
+powermax
+poweros
+powersx
+powerux
+pozix linux
+pqui
+prefect
+presto
+privatix
+prodos
+progeny
+prologue
+proolix
+proosek
+proteanos
+protech
+psos
+psosystem
+psu
+pts dos
+publicos
+pud
+pulsar linux
+puppy
+pure
+puredyne
+pymc
+pymc3
+pytorch
+qdos
+qilinux
+qimo
+qnx
+qplus
+quadros
+quantian
+qubes os
+radios
+raidiator
+random forest
+rapidminer
+raspbian
+rbasic
+rcos
+rcosjava
+rdos
+reactos
+readr
+real-32
+realogy real time architekt
+rebol-ios
+recurrent neural networks
+red flag
+red hat
+redash
+redhawk linux
+redmond linux
+redox
+redwall firewall
+remix os
+repairlix
+rewin
+rex-80/86
+rexx/os
+rhodos
+riot
+rip
+risc os
+rmos
+rms 68k
+rnn
+roadrunner
+rock
+rock linux
+rocket
+rocks cluster
+rome
+root
+rosa
+roslims
+rpath
+rr4 linux
+rsts/e
+rsx-11
+rt mach ntt
+rt-11
+rtel
+rtems
+rtlinux
+rtmk
+rtmx
+rtos-32
+rtos-uh
+rts-80
+rtx
+rtxdos
+rubix
+rxdos
+s.ha.r.k
+sabayon
+sabily
+sailfish os
+salgix
+salix os
+salvare
+sam
+samhain linux
+sanos
+santa fe
+sauver
+saxenos
+sci.linux
+scientific linux
+scikit-learn
+scipy
+sco linux
+sco openserver
+scope
+scorchos
+scottsnewos
+scout
+scp
+scp-ibe
+scrudgeware
+seaborn
+securepoint
+self-r
+sentry firewall
+seos
+sequent
+sevms vax
+shark
+sharpos
+shawnos
+shift linux
+shinux
+shiny
+shogun
+sibo
+simplymepis
+sinclair
+sinix
+sintran iii
+sklearn
+skolelinux
+skyos
+slack/390
+slackintosh
+slackware
+slamd64
+slampp
+slax
+slikware
+slitaz gnu/linux
+sls
+slynux
+sme server
+smoothwall
+smultita
+snapgear embedded linux
+snappix
+snøfrix
+sobs
+sol
+solar_os
+solaris
+solbourne unix
+sonic
+sorcerer
+sos
+sot linux
+source mage
+sp6800
+spacy
+spark
+sparkylinux
+spectra linux
+sphinxos
+spice
+spice/mt
+spin
+spinix
+splack
+splashtop
+spox
+sprezzos
+squeak
+ssp
+stampede
+star-os
+starcos
+starplex ii os
+startcom
+statsmodels
+std
+sting
+stormix
+streambox
+streamos
+stresslinux
+stux
+stx
+subgraph os
+subsump
+sugar on a stick
+sulix
+sumo
+sun linux
+sun wah
+sunmos
+sunos
+sunriseos
+superdos
+supergamer
+suse
+svm
+svr
+switch os
+syllable
+symbian os
+symbos
+symobi
+symphony os
+sympy
+synapse
+system 6
+system 7
+system v release
+systemrescue
+t2
+ta-linux
+tableau
+tablix
+tabos
+tails
+talos
+tao live
+taos
+taprobane
+techlinux
+tenex
+tensor flow
+tensorflow
+the
+theano
+thinstation
+thix
+threadx
+thrillos
+ti-99 4a
+tidyr
+tilix
+tinfoil hat linux
+tiny core linux
+tinyos
+tis apl
+titan lev
+tizen
+tnix
+tomsrtbt
+tomukas
+toophpix
+topologilinux
+tops-10
+tops-20
+topsy
+torch
+tornado
+torsion
+tos
+toutou
+tpf
+triangleos
+trinity
+tripos
+trisquel gnu/linux
+trixbox
+tron
+troppix
+trs-dos
+tru64 unix
+trustix
+trustverse
+truva
+tsx-32
+tud:os
+tumix
+tunes
+tupiserver
+tuquito
+turbodos
+turbolinux
+turkix
+uberos
+ubuntu
+ubuntu netbook remix
+ubuntu privacy remix
+ubuntu server
+ubuntume
+uclinux
+ucsd-p
+udos
+ufficio zero
+uhu-linux
+ul
+ulteo
+ultima
+ultrix
+umds
+umn
+underground
+uni flex
+uni/os
+unicos
+unicos/lc
+unifix linux
+unisys u5000
+unix system
+unixware
+unununium
+uos
+urli os
+userlinux
+usix
+utilex
+uts
+ututo
+ututo xs
+uxp/v
+v2 os
+vapour
+vector
+veloce os3
+versados
+vidalinux
+videolinux
+vine
+vision
+visopsys
+visual network os
+vlos
+vm/esa
+vm/vse
+vme
+vms
+vnlinux
+voltalinux
+volumio
+vrtx/8002
+vrtx/os
+vse
+vsos
+vsta
+vtos
+vxworks
+warlinux
+wazobia
+webfish linux
+wega
+weka
+whax
+white box
+whitix
+wienux
+wildmagnolia
+wind river linux
+windows
+windows 10
+windows 11
+windows 2000
+windows 7
+windows 8
+windows 95
+windows 98
+windows 98 se
+windows automotive
+windows ce
+windows me
+windows nt
+windows server 2003
+windows server 2003 r2
+windows server 2008
+windows server 2008 r2
+windows server 2012 r2
+windows vista
+windows xp
+winlinux 2001
+winmac
+winslack
+wizrd
+wolvix
+womp!
+word2vec
+x-evian
+x-kernel
+x/os
+xandros
+xaos
+xarnoppix
+xdos
+xenix
+xenoppix
+xfld
+xgboost
+ximian desktop
+xinu
+xmach
+xos
+xpud
+xteam
+xtreemos
+xts
+xubuntu
+yamit
+yaxic
+yellow dog
+yes
+yggdrasil linux
+ylmf os
+yoctix
+yolo
+yolov3
+yoper
+yunos
+z-vm
+z/os
+z9001-os
+zealos
+zebuntu
+zentyal
+zenwalk
+zephyr
+zeroshell
+zeta
+zeus zilog
+zevenos
+zmos
+zonecd
+zorin os
+zotos
+zrts 8000
+сonvolutional neural network2k

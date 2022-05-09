@@ -1,0 +1,63 @@
+ansible
+artifactory
+aws
+azure devops
+basis technologies
+bitbucket
+canary deploy
+capistrano
+cfengine
+chef
+ci/cd
+cloudstack
+code climate
+consul
+datadog
+deckhouse
+docker
+elk
+ganglia
+github actions
+gitlab
+gitlab ci
+grafana
+graylog
+helm
+icinga
+jenkins
+jira
+juju
+keysight eggplant
+kibana
+kubernetes
+logstash
+monit
+ms exchange server
+nagios
+new relic apm
+nginx
+overops
+pagerduty
+postfix
+productionmap
+prometheus
+puppet enterprise
+querysurge
+rabbitmq
+redhat
+rudder
+scalyr
+slack
+snort
+solarwinds devops
+sonarqube
+splunk
+stackify retrace
+sumo logic
+supervisor
+terraform
+upguard
+vagrant
+yandex cloud
+yandex.cloud
+zabbix

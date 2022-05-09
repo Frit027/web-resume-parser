@@ -1,0 +1,73 @@
+.net core
+actix
+aida/web
+asp .net core
+asp.net mvc
+beego
+boost
+bottle
+cakephp
+catalyst mvc
+celery
+chicago boss
+codeigniter
+django
+django framework
+django rest framework
+drf
+dropwizard
+eclipse vert.x
+encore.dev
+express
+expressjs
+fastapi
+feathersjs
+flask
+gotham
+grpc
+gunicorn
+hapi
+hapi.js
+iris
+koa
+kweb
+laravel
+lift
+luminus
+memcached
+meteor
+n2o
+nestjs
+node.js
+padrino
+phalcon
+phoenix
+play framework
+ponzu cms
+pyramid
+python-frog
+qt
+rest
+rest api
+revel
+rocket
+ruby on rails
+seaside
+simplify.web
+sinatra
+spark
+spring
+spring boot
+spring mvc
+spring-boot
+statewize
+strapi
+symfony
+teapot
+tsed
+web2py
+yesod
+yii
+yii2
+zend framework 2
+zope

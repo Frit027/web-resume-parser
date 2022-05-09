@@ -1,0 +1,43 @@
+a/b
+ad-hoc
+apache jmeter
+black box
+boundary value analysis
+charles
+chromedevtools
+cypress
+decision table based testing
+dev tools
+devtools
+end to end tests
+equivalence class partitioning
+equivalence partitioning
+fiddler
+functional testing
+integration testing
+jmeter
+load testing
+mind map
+mobile testing
+non-functional testing
+postman
+qase.io
+qaseio
+re-testing
+regression testing
+sentry
+smoke testing
+soap ui
+soapui
+stlc
+swagger
+test case
+test it
+test plan
+testit
+testlink
+testrail
+ui test
+unit testing
+usability testing
+youtrack
