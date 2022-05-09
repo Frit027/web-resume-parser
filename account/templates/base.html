@@ -14,13 +14,18 @@
             <a href="{% url "password_change" %}" >Сменить пароль</a>
           </li>
           <li>
-            <a href="{% url "main_page" %}" {% if section == "main_page" %}style="color: red;text-decoration: none;"{% endif %}>My main page</a>
+            <a
+              href="{% url "main_page" %}"
+              {% if section == "main_page" %}style="color: red;text-decoration: none;"{% endif %}
+            >
+              Главная
+            </a>
           </li>
         </ul>
       {% endif %}
       <span class="user">
         {% if request.user.is_authenticated %}
-          Hello {{ request.user.username }},
+          Привет, {{ request.user.username }}!
           <a href="{% url "logout" %}">Logout</a>
         {% else %}
           <a href="{% url "login" %}">Log-in</a>
