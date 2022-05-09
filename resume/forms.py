@@ -10,7 +10,7 @@ class DocumentForm(forms.ModelForm):
         model = Resume
         fields = ('file_field',)
 
-    ALLOWED_TYPES = ['PDF', 'DOC', 'DOCX']
+    ALLOWED_TYPES = ('PDF', 'DOCX')
 
     def clean(self):
         for file in self.files.getlist('file_field'):
