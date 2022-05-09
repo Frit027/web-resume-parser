@@ -1,4 +1,14 @@
 from django.db import models
+from django.contrib.auth.models import User
+
+
+class Resume(models.Model):
+    file = models.FileField(upload_to='resume')
+    json = models.FileField(upload_to='resume/json', null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    class Meta:
+        db_table = 'resume'
 
 
 class Skill(models.Model):
