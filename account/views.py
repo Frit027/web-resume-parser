@@ -1,18 +1,12 @@
 from django.shortcuts import render
 from .forms import PasswordChangingForm, UserRegistrationForm
 from django.urls import reverse_lazy
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import PasswordChangeView
 
 
 class PasswordsChangeView(PasswordChangeView):
     form_class = PasswordChangingForm
     success_url = reverse_lazy('password_change_done')
-
-
-@login_required
-def main_page(request):
-    return render(request, 'account/main_page.html', {'section': 'main_page'})
 
 
 def register(request):
