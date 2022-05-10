@@ -88,6 +88,8 @@ class EducationExtractor:
         for line in text.split('\n'):
             if any(level in line.lower() for level in self.__LEVELS):
                 lst.extend(self.__PATTERN_LEVEL.findall(line.lower()))
+        if 'два и более высших' in lst:
+            lst.append('высшее')
         return set(lst)
 
     def __get_idx_of_section(self, indexes, text):
