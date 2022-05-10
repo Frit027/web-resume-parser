@@ -28,5 +28,5 @@ class JSONCreator:
             'skills': self.__skills_extractor.get_info(resume_text)
         }
 
-    def create_json(self, resume_text):
+    def get_json(self, resume_text):
         return json.dumps(self.__get_data(resume_text), indent=4, ensure_ascii=False).encode('utf-8')
