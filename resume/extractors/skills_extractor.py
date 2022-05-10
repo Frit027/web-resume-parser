@@ -74,19 +74,19 @@ class SkillsExtractor:
         skills = self.__split_words_with_slash(skills)
         self.__remove_driving_categories(text.lower(), skills)
         return {
-            'program_languages': self.__get_filtered_skills(skills, self.program_languages),
-            'ssl': self.__get_filtered_skills(skills, self.stylesheet_languages),
-            'markup': self.__get_filtered_skills(skills, self.markup_languages),
+            'program_lang': self.__get_filtered_skills(skills, self.program_languages),
+            'stylesheet_lang': self.__get_filtered_skills(skills, self.stylesheet_languages),
+            'markup_lang': self.__get_filtered_skills(skills, self.markup_languages),
             'db': self.__get_filtered_skills(skills, self.databases),
-            'os': self.__get_filtered_skills(skills, self.operating_systems),
-            'vc': self.__get_filtered_skills(skills, self.version_control),
+            'operating_system': self.__get_filtered_skills(skills, self.operating_systems),
+            'version_control': self.__get_filtered_skills(skills, self.version_control),
             'ios': self.__get_filtered_skills(skills, self.ios),
             'android': self.__get_filtered_skills(skills, self.android),
             'ml': self.__get_filtered_skills(skills, self.ml),
             'gamedev': self.__get_filtered_skills(skills, self.gamedev),
             'testing': self.__get_filtered_skills(skills, self.testing),
-            'admin': self.__get_filtered_skills(skills, self.sys_admin),
+            'sys_admin': self.__get_filtered_skills(skills, self.sys_admin),
             'devops': self.__get_filtered_skills(skills, self.dev_ops),
-            'front': self.__get_filtered_skills(skills, self.frontend),
-            'back': self.__get_filtered_skills(skills, self.backend)
+            'frontend': self.__get_filtered_skills(skills, self.frontend),
+            'backend': self.__get_filtered_skills(skills, self.backend)
         }
