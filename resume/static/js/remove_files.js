@@ -7,6 +7,7 @@ $('#remove_button').click(() => {
         success: (data) => {
             if (data.is_removed) {
                 $('#ul_resumes').replaceWith('<p>Вы пока не загрузили резюме.</p>');
+                $('#remove_button').remove();
             }
         }
     });
