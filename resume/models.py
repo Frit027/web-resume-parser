@@ -1,7 +1,9 @@
 import json as json_lib
+import os
 from functools import reduce
 from django.db import models
 from django.contrib.auth.models import User
+from web_resume_parser.settings import SKILLS
 
 
 class Resume(models.Model):
@@ -18,7 +20,7 @@ class Resume(models.Model):
             return json_lib.load(f)
 
     @staticmethod
-    def __gel_all_resumes_json(user):
+    def __get_all_resumes_json(user):
         resumes_json = []
         for resume in user.resume_set.all():
             with open(resume.json.path, 'r', encoding='utf-8') as f:
@@ -26,7 +28,7 @@ class Resume(models.Model):
         return resumes_json
 
     @staticmethod
-    def __gel_all_resumes(user):
+    def __get_all_resumes(user):
         resumes = {}
         for resume in user.resume_set.all():
             with open(resume.json.path, 'r', encoding='utf-8') as f:
@@ -34,7 +36,9 @@ class Resume(models.Model):
         return resumes
 
     @staticmethod
-    def filter_by_age(interval_ages, resumes):
+    def __filter_by_age(interval_ages, resumes):
+        if interval_ages == 'None':
+            return resumes
         if interval_ages == '14_20':
             interval = tuple(range(14, 20))
         elif interval_ages == '20_30':
@@ -46,7 +50,9 @@ class Resume(models.Model):
         return [resume for resume in resumes if resumes[resume]['age'] in interval]
 
     @staticmethod
-    def filter_by_experience(exp, resumes):
+    def __filter_by_experience(exp, resumes):
+        if exp == 'None':
+            return resumes
         if exp == 'no':
             return [resume for resume in resumes if resume['experience'] is None]
         if exp == 'less_1':
@@ -63,57 +69,57 @@ class Resume(models.Model):
                 if resumes[resume]['experience'] is not None and is_in_interval(resumes[resume]['experience'])]
 
     @staticmethod
-    def filter_by_levels(levels, resumes):
+    def __filter_by_levels(levels, resumes):
+        if not levels:
+            return resumes
         return [resume for resume in resumes if set(resumes[resume]['education']['levels']) & set(levels)]
 
     @staticmethod
-    def list_merge(lst): return reduce(lambda d, el: d.extend(el) or d, lst, [])
+    def __list_merge(lst): return reduce(lambda d, el: d.extend(el) or d, lst, [])
 
     @staticmethod
-    def filter_by_skills(skills, resumes):
+    def __filter_by_skills(skills, resumes):
+        if not Resume.__list_merge(skills.values()):
+            return resumes
         res = []
         for resume in resumes:
-            if set(Resume.list_merge(resumes[resume]['skills'].values())) & set(Resume.list_merge(skills.values())):
+            if set(Resume.__list_merge(resumes[resume]['skills'].values())) & set(Resume.__list_merge(skills.values())):
                 res.append(resume)
         return res
 
     @staticmethod
     def get_resumes_by_filters(user, interval_ages, exp, levels, skills):
-        resumes = Resume.__gel_all_resumes(user)
-        if interval_ages != 'None':
-            resumes_by_age = Resume.filter_by_age(interval_ages, resumes)
-        else:
-            resumes_by_age = resumes
-
-        if exp != 'None':
-            resumes_by_exp = Resume.filter_by_experience(exp, resumes)
-        else:
-            resumes_by_exp = resumes
-
-        if levels:
-            resumes_by_levels = Resume.filter_by_levels(levels, resumes)
-        else:
-            resumes_by_levels = resumes
-
-        if Resume.list_merge(skills.values()):
-            resumes_by_skills = Resume.filter_by_skills(skills, resumes)
-        else:
-            resumes_by_skills = resumes
+        resumes = Resume.__get_all_resumes(user)
+        resumes_by_age = Resume.__filter_by_age(interval_ages, resumes)
+        resumes_by_exp = Resume.__filter_by_experience(exp, resumes)
+        resumes_by_levels = Resume.__filter_by_levels(levels, resumes)
+        resumes_by_skills = Resume.__filter_by_skills(skills, resumes)
 
         return set(resumes_by_skills) & set(resumes_by_levels) & set(resumes_by_exp) & set(resumes_by_age)
 
     @staticmethod
     def get_data(user):
         data = {}
-        skills = ('operating_system', 'stylesheet_lang', 'version_control',
-                  'program_lang', 'markup_lang', 'sys_admin', 'frontend',
-                  'android', 'testing', 'gamedev', 'backend', 'devops',
-                  'ios', 'db', 'ml')
-        for resume in Resume.__gel_all_resumes_json(user):
+        for resume in Resume.__get_all_resumes_json(user):
             data['levels'] = resume['education']['levels'] + data.get('levels', [])
-            for skill in skills:
+            for skill in SKILLS:
                 data[skill] = resume['skills'][skill] + data.get(skill, [])
         return {k: sorted(list(set(v))) for k, v in data.items()}
+
+    @staticmethod
+    def get_filenames_from_resumes(resumes):
+        return [resume.file.name.replace('resume/', '') for resume in resumes]
+
+    @staticmethod
+    def get_filenames_by_user(user):
+        return [resume.file.name.replace('resume/', '') for resume in Resume.__get_all_resumes(user)]
+
+    @staticmethod
+    def remove_files(user):
+        for resume in Resume.__get_all_resumes(user):
+            os.remove(resume.file.path)
+            os.remove(resume.json.path)
+            resume.delete()
 
 
 class Skill(models.Model):
