@@ -8,13 +8,17 @@ from .json_creator import JSONCreator
 from .file_converter import FileConverter
 from .utilities import get_json_filename
 from django.http import JsonResponse
+from web_resume_parser.settings import SKILLS
 
 
 @login_required
 def main_page(request):
     if request.method == 'POST':
-        form = DocumentForm(request.POST, request.FILES)
+        if request.POST.get('is_remove_files'):
+            Resume.remove_files(request.user)
+            return JsonResponse({'is_removed': True})
 
+        form = DocumentForm(request.POST, request.FILES)
         if form.is_valid():
             converter = FileConverter()
             json_creator = JSONCreator()
@@ -33,7 +37,8 @@ def main_page(request):
         'resume/main_page.html',
         {
             'section': 'main_page',
-            'form': form
+            'form': form,
+            'resumes': Resume.get_filenames_by_user(request.user)
         }
     )
 
@@ -42,21 +47,18 @@ def main_page(request):
 def analysis(request):
     data = Resume.get_data(request.user)
     if request.method == 'POST':
-        skills = ('operating_system', 'stylesheet_lang', 'version_control',
-                  'program_lang', 'markup_lang', 'sys_admin', 'frontend',
-                  'android', 'testing', 'gamedev', 'backend', 'devops',
-                  'ios', 'db', 'ml')
         levels = request.POST.getlist('levels[]')
         age = request.POST['age']
         experience = request.POST['experience']
-        skills_dict = {}
-        for skill in skills:
-            skills_dict[skill] = request.POST.getlist(f'skills[{skill}][]')
+        skills_dict = {skill: request.POST.getlist(f'skills[{skill}][]') for skill in SKILLS}
 
         resumes = Resume.get_resumes_by_filters(request.user, age, experience, levels, skills_dict)
         [print(r.data) for r in resumes]
         print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
-        return JsonResponse({'resumes': [resume.file.name for resume in resumes]})
+        return JsonResponse({
+            'filenames': Resume.get_filenames_from_resumes(resumes),
+            'resumes': [resume.data for resume in resumes]
+        })
     else:
         pass
     return render(request, 'resume/analysis.html', {'data': data})
