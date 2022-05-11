@@ -2,12 +2,35 @@
 
 {% block title %}Main Page{% endblock %}
 
+{% block script %}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+{% endblock %}
+
 {% block content %}
   <h1>Главная страница</h1>
+
+  <div id="resumes">
+    <p>Ваши резюме:</p>
+    {% if resumes %}
+      <ul id="ul_resumes">
+        {% for name in resumes %}
+          <li>{{ name }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>Вы пока не загрузили резюме.</p>
+    {% endif %}
+    <button id="remove_button">Удалить все</button>
+  </div>
+  <br>
 
   <form action="." method="post" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Загрузить</button>
   </form>
+
+  {% load static %}
+  <script src="{% static 'js/remove_files.js' %}"></script>
 {% endblock %}
