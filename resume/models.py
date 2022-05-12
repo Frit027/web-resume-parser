@@ -54,7 +54,7 @@ class Resume(models.Model):
         if exp == 'None':
             return resumes
         if exp == 'no':
-            return [resume for resume in resumes if resume['experience'] is None]
+            return [resume for resume in resumes if resumes[resume]['experience'] is None]
         if exp == 'less_1':
             def is_in_interval(age): return age < 1
         elif exp == '1_3':
