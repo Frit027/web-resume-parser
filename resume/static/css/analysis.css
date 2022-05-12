@@ -1,0 +1,34 @@
+.select {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin-right: 3rem;
+}
+
+.selects {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    margin-bottom: 2rem;
+}
+
+.filename {
+    font-weight: bold;
+}
+
+.detail {
+    cursor: pointer;
+    color: #18ADFF;
+}
+
+.detail:hover {
+    text-decoration: underline;
+}
+
+.resume-info {
+    display: none;
+}
+
+.bi::before {
+    vertical-align: -0.23rem;
+}
