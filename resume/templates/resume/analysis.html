@@ -2,7 +2,14 @@
 
 {% load static %}
 
-{% block title %}Main Page{% endblock %}
+{% block title %}Анализ{% endblock %}
+
+{% block stylesheet %}
+  {# bootstrap-icons #}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  {# my styles #}
+  <link rel="stylesheet" href="{% static 'css/analysis.css' %}">
+{% endblock %}
 
 {% block script %}
   {# bootstrap-select #}
@@ -13,179 +20,191 @@
 {% endblock %}
 
 {% block content %}
-  <h1>Анализ</h1>
+  <h5>Общие критерии</h5>
 
-  <ul id="resumes"></ul>
+  <div class="selects">
+    <div class="select">
+      <label for="levels">Образование</label>
+      <select class="selectpicker" id="levels" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for level in data.levels %}
+          <option value="{{ level }}">{{ level.capitalize }}</option>
+        {% endfor %}
+      </select>
+    </div>
 
-  <div>
-    <label for="levels">Образование</label>
-    <select class="selectpicker" id="levels" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for level in data.levels %}
-        <option value="{{ level }}">{{ level.capitalize }}</option>
-      {% endfor %}
-    </select>
+    <div class="select">
+      <label for="experience">Опыт работы</label>
+      <select class="selectpicker" id="experience" data-size="4">
+        <option value="None">Любой</option>
+        <option value="no">Без опыта</option>
+        <option value="less_1">Меньше 1 года</option>
+        <option value="1_3">От 1 до 3 лет</option>
+        <option value="3_5">От 3 до 5 лет</option>
+        <option value="5_10">От 5 до 10 лет</option>
+        <option value="more_10">Больше 10 лет</option>
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="age">Возраст</label>
+      <select class="selectpicker" id="age" data-size="4">
+        <option value="None">Любой</option>
+        <option value="14_20">От 14 до 20 лет</option>
+        <option value="20_30">От 20 до 30 лет</option>
+        <option value="30_50">От 30 до 50 лет</option>
+        <option value="more_50">Старше 50 лет</option>
+      </select>
+    </div>
   </div>
 
-  <div>
-    <label for="experience">Опыт работы</label>
-    <select class="selectpicker" id="experience">
-      <option value="None">Любой</option>
-      <option value="no">Без опыта</option>
-      <option value="less_1">Меньше 1 года</option>
-      <option value="1_3">От 1 до 3 лет</option>
-      <option value="3_5">От 3 до 5 лет</option>
-      <option value="5_10">От 5 до 10 лет</option>
-      <option value="more_10">Больше 10 лет</option>
-    </select>
+  <h5>Какими информационными технологиями должен владеть</h5>
+
+  <div class="selects">
+    <div class="select">
+      <label for="program_lang">Языки программирования</label>
+      <select class="selectpicker" id="program_lang" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for lang in data.program_lang %}
+          <option value="{{ lang }}">{{ lang }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="stylesheet_lang">Языки описания внешнего вида страницы</label>
+      <select class="selectpicker" id="stylesheet_lang" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for ssl in data.stylesheet_lang %}
+          <option value="{{ ssl }}">{{ ssl }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="markup_lang">Языки разметки</label>
+      <select class="selectpicker" id="markup_lang" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for markup in data.markup_lang %}
+          <option value="{{ markup }}">{{ markup }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="db">СУБД</label>
+      <select class="selectpicker" id="db" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for db in data.db %}
+          <option value="{{ db }}">{{ db }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="operating_system">Операционные системы</label>
+      <select class="selectpicker" id="operating_system" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for os in data.operating_system %}
+          <option value="{{ os }}">{{ os }}</option>
+        {% endfor %}
+      </select>
+    </div>
   </div>
 
-  <div>
-    <label for="age">Возраст</label>
-    <select class="selectpicker" id="age">
-      <option value="None">Любой</option>
-      <option value="14_20">От 14 до 20 лет</option>
-      <option value="20_30">От 20 до 30 лет</option>
-      <option value="30_50">От 30 до 50 лет</option>
-      <option value="more_50">Старше 50 лет</option>
-    </select>
+  <div class="selects">
+    <div class="select">
+      <label for="version_control">Системы контроля версий</label>
+      <select class="selectpicker" id="version_control" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for vc in data.version_control %}
+          <option value="{{ vc }}">{{ vc }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="ios">Технологии IOS</label>
+      <select class="selectpicker" id="ios" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for skill in data.ios %}
+          <option value="{{ skill }}">{{ skill }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="android">Технологии Android</label>
+      <select class="selectpicker" id="android" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for skill in data.android %}
+          <option value="{{ skill }}">{{ skill }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="ml">Машинное обучение, Data Science, Data Analysis</label>
+      <select class="selectpicker" id="ml" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for skill in data.ml %}
+          <option value="{{ skill }}">{{ skill }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="gamedev">GameDev</label>
+      <select class="selectpicker" id="gamedev" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for skill in data.gamedev %}
+          <option value="{{ skill }}">{{ skill }}</option>
+        {% endfor %}
+      </select>
+    </div>
   </div>
 
-  <div>
-    <label for="program_lang">Языки программирования</label>
-    <select class="selectpicker" id="program_lang" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for lang in data.program_lang %}
-        <option value="{{ lang }}">{{ lang }}</option>
-      {% endfor %}
-    </select>
+  <div class="selects">
+    <div class="select">
+      <label for="testing">Технологии и методы тестирования</label>
+      <select class="selectpicker" id="testing" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for test in data.testing %}
+          <option value="{{ test }}">{{ test }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="sys_admin">Администрирование</label>
+      <select class="selectpicker" id="sys_admin" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for skill in data.sys_admin %}
+          <option value="{{ skill }}">{{ skill }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="devops">DevOps</label>
+      <select class="selectpicker" id="devops" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for skill in data.devops %}
+          <option value="{{ skill }}">{{ skill }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="frontend">Технологии Frontend-разработки</label>
+      <select class="selectpicker" id="frontend" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for skill in data.frontend %}
+          <option value="{{ skill }}">{{ skill }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="select">
+      <label for="backend">Технологии Backend-разработки</label>
+      <select class="selectpicker" id="backend" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
+        {% for skill in data.backend %}
+          <option value="{{ skill }}">{{ skill }}</option>
+        {% endfor %}
+      </select>
+    </div>
   </div>
 
-  <div>
-    <label for="stylesheet_lang">Языки описания внешнего вида страницы</label>
-    <select class="selectpicker" id="stylesheet_lang" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for ssl in data.stylesheet_lang %}
-        <option value="{{ ssl }}">{{ ssl }}</option>
-      {% endfor %}
-    </select>
+  <div class="text-center">
+    <button class="btn btn-primary" id="apply_button">Применить</button>
   </div>
 
-  <div>
-    <label for="markup_lang">Языки разметки</label>
-    <select class="selectpicker" id="markup_lang" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for markup in data.markup_lang %}
-        <option value="{{ markup }}">{{ markup }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="db">СУБД</label>
-    <select class="selectpicker" id="db" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for db in data.db %}
-        <option value="{{ db }}">{{ db }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="operating_system">Операционные системы</label>
-    <select class="selectpicker" id="operating_system" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for os in data.operating_system %}
-        <option value="{{ os }}">{{ os }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="version_control">Системы контроля версий</label>
-    <select class="selectpicker" id="version_control" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for vc in data.version_control %}
-        <option value="{{ vc }}">{{ vc }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="ios">Технологии IOS</label>
-    <select class="selectpicker" id="ios" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for skill in data.ios %}
-        <option value="{{ skill }}">{{ skill }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="android">Технологии Android</label>
-    <select class="selectpicker" id="android" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for skill in data.android %}
-        <option value="{{ skill }}">{{ skill }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="ml">Машинное обучение, Data Science, Data Analysis</label>
-    <select class="selectpicker" id="ml" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for skill in data.ml %}
-        <option value="{{ skill }}">{{ skill }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="gamedev">GameDev</label>
-    <select class="selectpicker" id="gamedev" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for skill in data.gamedev %}
-        <option value="{{ skill }}">{{ skill }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="testing">Технологии и методы тестирования</label>
-    <select class="selectpicker" id="testing" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for test in data.testing %}
-        <option value="{{ test }}">{{ test }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="sys_admin">Администрирование</label>
-    <select class="selectpicker" id="sys_admin" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for skill in data.sys_admin %}
-        <option value="{{ skill }}">{{ skill }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="devops">DevOps</label>
-    <select class="selectpicker" id="devops" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for skill in data.devops %}
-        <option value="{{ skill }}">{{ skill }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="frontend">Технологии Frontend-разработки</label>
-    <select class="selectpicker" id="frontend" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for skill in data.frontend %}
-        <option value="{{ skill }}">{{ skill }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <div>
-    <label for="backend">Технологии Backend-разработки</label>
-    <select class="selectpicker" id="backend" multiple data-size="4" data-live-search="true" title="Ничего не выбрано">
-      {% for skill in data.backend %}
-        <option value="{{ skill }}">{{ skill }}</option>
-      {% endfor %}
-    </select>
-  </div>
-
-  <button id="apply_button" type="button">Применить</button>
+  <div id="resumes"></div>
 
   <script src="{% static 'js/send_filters.js' %}"></script>
 {% endblock %}
