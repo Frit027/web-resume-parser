@@ -7,7 +7,7 @@ class ContactInfoExtractor:
     __PATTERN_EMAIL = [
         {'LIKE_EMAIL': True}
     ]
-    __PATTERN_PHONE = re.compile(r'(\+7|8|7)[-\s(]*\d{3}[-)\s]*\d{3}[\s-]?\d{2}[\s-]?\d{2}')
+    __PATTERN_PHONE = re.compile(r'(?<![\wа-яА-Я])(?:\+7|8|7)[-\s(]*\d{3}[-)\s]*\d{3}[\s-]?\d{2}[\s-]?\d{2}(?![\wа-яА-Я])')
 
     def __init__(self):
         self.__nlp = spacy.load('ru_core_news_lg')
