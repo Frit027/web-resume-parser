@@ -1,0 +1,12 @@
+.ul_filenames {
+    padding-left: 1rem;
+    display: none;
+}
+
+.remove_btn {
+    margin: 1.5rem 0;
+}
+
+.upload_btn {
+    margin-top: 2rem;
+}
