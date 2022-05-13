@@ -1,23 +1,40 @@
 {% extends 'base.html' %}
 
-{% block title %}Log-in{% endblock %}
+{% load static %}
+
+{% block title %}Вход{% endblock %}
+
+{% block stylesheet %}
+  {# my styles #}
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
 
 {% block content %}
-  <h1>Вход</h1>
-  {% if form.errors %}
-    <p>Ваше имя пользователя и пароль не совпадают. Пожалуйста, попробуйте еще раз.</p>
-  {% else %}
-    <p>
-      Пожалуйста, используйте следующую форму для входа. Если у вас нет учетной записи,
-      <a href="{% url "register" %}">зарегистрируйтесь здесь</a>.
-    </p>
-  {% endif %}
-  <div class="login-form">
-    <form action="{% url 'login' %}" method="post" style="width: 400px;">
-      {{ form.as_p }}
-      {% csrf_token %}
-      <input type="hidden" name="next" value="{{ next }}"/>
-      <p><input type="submit" value="Войти"></p>
-    </form>
-  </div>
+  <form action="{% url 'login' %}" method="post">
+    <h1 class="h3 mb-3 fw-normal">Войдите</h1>
+
+    <div class="form-floating">
+      {{ form.username }}
+      <label for="{{ form.username.id_for_label }}">Логин</label>
+    </div>
+
+    <div class="form-floating mb-4">
+      {{ form.password }}
+      <label for="{{ form.password.id_for_label }}">Пароль</label>
+    </div>
+
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ next }}"/>
+    <button class="w-100 btn btn-primary" type="submit">Войти</button>
+
+    <div class="mt-4">
+      Нет аккаунта? <a href="{% url "register" %}">Зарегистрируйтесь!</a>
+    </div>
+
+    {% if form.errors %}
+      <div class="mt-5 error">Ваш логин и пароль не совпадают.<br>Пожалуйста, попробуйте еще раз.</div>
+    {% endif %}
+
+    <p class="mt-5 mb-3 text-muted">© РТУ МИРЭА 2022</p>
+  </form>
 {% endblock %}
