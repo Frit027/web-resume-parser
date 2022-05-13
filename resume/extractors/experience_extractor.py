@@ -37,8 +37,8 @@ class ExperienceExtractor:
                 map(lambda x:
                     parse(pattern.format(x.strip()), settings={'TIMEZONE': 'UTC'}, languages=['ru'])
                     if all(word not in x for word in self.__NOW_DATE_WORDS)
-                    else parse(datetime.strptime(str(datetime.now()), '%Y-%d-%m %H:%M:%S.%f')
-                                       .strftime('%Y-%m-%d %H:%M:%S'),
+                    else parse(datetime.strptime(str(datetime.now()), '%Y-%m-%d %H:%M:%S.%f')
+                                       .strftime('%Y-%d-%m %H:%M:%S'),
                                settings={'TIMEZONE': 'UTC'},
                                languages=['ru']),
                     interval.split('-'))
