@@ -24,7 +24,7 @@ def main_page(request):
             json_creator = JSONCreator()
 
             for file in request.FILES.getlist('file_field'):
-                resume = Resume(file=file, user=request.user)
+                resume = Resume(filename=file.name, file=file, user=request.user)
                 resume.save()
                 json_str = json_creator.get_json(converter.get_text(resume.file.path))
                 resume.json.save(get_json_filename(resume.file.name), ContentFile(json_str))
@@ -36,7 +36,7 @@ def main_page(request):
         request,
         'resume/main_page.html',
         {
-            'section': 'main_page',
+            'section': 'main',
             'form': form,
             'resumes': Resume.get_filenames_by_user(request.user)
         }
@@ -61,4 +61,4 @@ def analysis(request):
         })
     else:
         pass
-    return render(request, 'resume/analysis.html', {'data': data})
+    return render(request, 'resume/analysis.html', {'section': 'analysis', 'data': data})
