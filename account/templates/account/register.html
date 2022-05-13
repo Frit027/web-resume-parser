@@ -1,13 +1,43 @@
 {% extends "base.html" %}
 
-{% block title %}Create an account{% endblock %}
+{% block title %}Регистрация{% endblock %}
 
 {% block content %}
-  <h1>Регистрация</h1>
-  <p>Пожалуйста, зарегистрируйтесь, используя следующую форму:</p>
-  <form action="." method="post">
-    {{ user_form.as_p }}
+  <form class="login-register-form" action="." method="post">
     {% csrf_token %}
-    <p><input type="submit" value="Создать аккаунт"></p>
+
+    <h1 class="h3 mb-3 fw-normal">Регистрация</h1>
+    <div class="form-floating mb-2">
+      {{ user_form.username }}
+      <label for="{{ user_form.username.id_for_label }}">Логин</label>
+    </div>
+
+    <div class="form-floating mb-2">
+      {{ user_form.first_name }}
+      <label for="{{ user_form.first_name.id_for_label }}">Ваше имя</label>
+    </div>
+
+    <div class="form-floating mb-2">
+      {{ user_form.password }}
+      <label for="{{ user_form.password.id_for_label }}">Пароль</label>
+    </div>
+
+    <div class="form-floating mb-4">
+      {{ user_form.password2 }}
+      <label for="{{ user_form.password2.id_for_label }}">Повторите пароль</label>
+    </div>
+
+    <button class="w-100 btn btn-primary" type="submit">Создать аккаунт</button>
+
+    {% if user_form.errors %}
+      <div class="mt-3">
+        {% for error in user_form.username.errors %}
+          <div class="error">{{error}}</div>
+        {% endfor %}
+        {% for error in user_form.password2.errors %}
+          <div class="error">{{error}}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
   </form>
 {% endblock %}
