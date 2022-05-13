@@ -5,7 +5,8 @@ import os
 
 class DocumentForm(forms.ModelForm):
     __ALLOWED_TYPES = ('PDF', 'DOCX')
-    file_field = forms.FileField(widget=forms.ClearableFileInput(attrs={'multiple': True}))
+    file_field = forms.FileField(label='',
+                                 widget=forms.ClearableFileInput(attrs={'multiple': True, 'class': 'form-control'}))
 
     class Meta:
         model = Resume
