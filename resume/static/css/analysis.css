@@ -16,15 +16,6 @@
     font-weight: bold;
 }
 
-.detail {
-    cursor: pointer;
-    color: #18ADFF;
-}
-
-.detail:hover {
-    text-decoration: underline;
-}
-
 .resume-info {
     display: none;
 }
