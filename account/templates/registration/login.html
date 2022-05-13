@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}Вход{% endblock %}
 
 {% block content %}
   <form class="login-register-form" action="{% url 'login' %}" method="post">
     {% csrf_token %}
+
+    <img class="mb-4" src="{% static 'img/logo.png' %}" alt="logo" width="64" height="64">
 
     <h1 class="h3 mb-3 fw-normal">Войдите</h1>
 
@@ -26,7 +30,9 @@
     </div>
 
     {% if form.errors %}
-      <div class="mt-3 error">Ваш логин и пароль не совпадают.<br>Пожалуйста, попробуйте еще раз.</div>
+      <div class="mt-3 error">
+        Пожалуйста, введите правильные имя пользователя и пароль. Оба поля могут быть чувствительны к регистру.
+      </div>
     {% endif %}
 
     <p class="mt-5 mb-3 text-muted">© РТУ МИРЭА 2022</p>
