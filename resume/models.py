@@ -7,6 +7,7 @@ from web_resume_parser.settings import SKILLS
 
 
 class Resume(models.Model):
+    filename = models.CharField(max_length=255, default='filename')
     file = models.FileField(upload_to='resume')
     json = models.FileField(upload_to='resume/json', null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -108,11 +109,11 @@ class Resume(models.Model):
 
     @staticmethod
     def get_filenames_from_resumes(resumes):
-        return [resume.file.name.replace('resume/', '') for resume in resumes]
+        return [resume.filename for resume in resumes]
 
     @staticmethod
     def get_filenames_by_user(user):
-        return [resume.file.name.replace('resume/', '') for resume in Resume.__get_all_resumes(user)]
+        return [resume.filename for resume in Resume.__get_all_resumes(user)]
 
     @staticmethod
     def remove_files(user):
