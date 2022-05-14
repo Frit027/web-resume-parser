@@ -1,3 +1,8 @@
+const PRELOADER = `
+  <div class="preloader">
+    <div class="preloader__image"></div>
+  </div>`;
+
 (() => {
     $('#remove_button').click(() => {
         $.ajax({
@@ -25,4 +30,12 @@
             ulFilenames.hide('slow');
         }
     });
+
+    $('#files_form').on('submit', () => {
+        $('body').prepend(PRELOADER);
+    });
 })();
+
+document.onreadystatechange = () => {
+    $('.preloader').remove();
+};
