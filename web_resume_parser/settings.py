@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from django.urls import reverse_lazy
 
@@ -27,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'account.apps.AccountConfig',
+    'resume.apps.ResumeConfig',
 ]
 
 MIDDLEWARE = [
@@ -117,3 +119,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = reverse_lazy('main_page')
 LOGIN_URL = reverse_lazy('login')
 LOGOUT_URL = reverse_lazy('logout')
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+SKILLS = ('operating_system', 'stylesheet_lang', 'version_control',
+          'program_lang', 'markup_lang', 'sys_admin', 'frontend',
+          'android', 'testing', 'gamedev', 'backend', 'devops',
+          'ios', 'db', 'ml')
