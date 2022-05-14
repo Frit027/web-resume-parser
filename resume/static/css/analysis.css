@@ -13,6 +13,7 @@
 }
 
 .filename {
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -22,4 +23,9 @@
 
 .bi::before {
     vertical-align: -0.23rem;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-style: italic;
 }
