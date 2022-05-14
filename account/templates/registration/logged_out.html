@@ -6,19 +6,15 @@
 
 {% block stylesheet %}
   {# my styles #}
-  <link rel="stylesheet" href="{% static 'css/logged_out.css' %}">
+  <link rel="stylesheet" href="{% static 'css/card.css' %}">
 {% endblock %}
 
 {% block content %}
-  <div class="card text-center stroke">
-    <div class="card-header">ResumeParser</div>
-    <div class="card-body">
-      <img class="mb-2" src="{% static 'img/logo.png' %}" alt="logo" width="64" height="64">
+  <div class="card stroke">
+    <img class="mt-4 mb-2" src="{% static 'img/logo.svg' %}" alt="logo" width="128" height="128">
+    <div class="card-body text-center">
       <p class="card-text">Вы успешно вышли из аккаунта.</p>
       <a href="{% url "login" %}" class="btn btn-primary">Войти снова</a>
-    </div>
-    <div class="card-footer">
-      <span class="text-muted">© РТУ МИРЭА 2022</span>
     </div>
   </div>
 {% endblock %}
