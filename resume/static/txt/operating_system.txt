@@ -5,7 +5,6 @@ a/ux
 absolute linux
 abulédu
 acados
-accord.net
 acp
 adamantix
 adaos
@@ -19,7 +18,6 @@ aerolitheos
 agnula
 aimos
 aios
-airflow
 aix
 aix/370
 aix/esa
@@ -33,7 +31,6 @@ allianceos
 alpha os
 alpine linux
 alt linux
-altair
 alto os
 amarok live
 amber
@@ -54,11 +51,6 @@ antarctica
 antemium
 antix
 aos/vs
-apache airflow
-apache kafka
-apache mahout
-apache presto
-apache spark
 aperios
 apodio
 apollo domain/os
@@ -99,7 +91,6 @@ auroraos
 aurox
 austrumi
 autosense os
-azure databricks
 b-free
 b2d
 babeldisc
@@ -121,7 +112,6 @@ beowulf
 berry linux
 bestlinux
 big linux
-bigquery
 bintoo
 biobrew
 bioknoppix
@@ -155,13 +145,11 @@ bugos
 burapha
 byzantineos
 c executive
-caffe
 caixa mágica
 caldera linux
 calmira
 caos
 carl.os
-catboost
 catix
 ccp
 ccux
@@ -197,10 +185,8 @@ co-create
 cobaltos
 cobra
 coherent
-colab
 college
 commodore os vision
-computer vision
 condorux
 conectiva linux
 consensys
@@ -210,7 +196,6 @@ cool linux cd
 corebiz
 coreboot
 corel linux
-coreml
 coreos
 cos
 cosy
@@ -240,14 +225,11 @@ damn vulnerable linux
 danix
 darkstar
 darwin
-dask
 data general
-databricks
 dc/osx
 dcp
 debian gnu/linux
 debris linux
-deep learning
 deep-water
 deft linux
 degenerate os
@@ -275,7 +257,6 @@ dos
 dos 50
 dos2
 dosket
-dplyr
 dr'ex
 dr-dos
 draco linux
@@ -286,7 +267,6 @@ dreamlinux
 drops
 drywell os
 ds-os
-dsgan
 dtos
 dualix
 dvix
@@ -356,7 +336,6 @@ fdos
 feather
 featherweight
 fedora
-feedforward neural network
 fermi
 ffsearch-livecd
 fiasco
@@ -418,7 +397,6 @@ gentoox
 geolivre
 george
 geos
-ggplot2
 gibraltar
 ging
 giotto
@@ -448,7 +426,6 @@ guadalinex
 guide
 guix
 gulic-bsd
-h2o.ai
 h3knix
 ha-msp
 haansoft
@@ -534,7 +511,6 @@ k-demar
 k12ltsp
 kaboot
 kaella
-kafka
 kaios
 kaladix linux
 kalango
@@ -546,8 +522,6 @@ kaspersky os
 kateos
 katix
 kea
-keras
-keras.io
 kerberos
 keykos
 kinneret
@@ -555,7 +529,6 @@ kiwi linux
 klax
 klikit-linux
 kmlinux
-knime
 knopils
 knoppel
 knopperdisk
@@ -583,7 +556,6 @@ l.a.s.
 l13plus
 l4
 lainos
-lama
 lan manager
 ldos
 leetnux
@@ -594,8 +566,6 @@ lfs
 lg3d
 libranet linux
 librecmc
-lightautoml
-lightgbm
 liis
 lin-x
 linare
@@ -656,8 +626,6 @@ manos
 marte os
 maruti
 masix
-mathematical analysis
-matplotlib
 maverick os
 max
 maxos
@@ -692,8 +660,6 @@ miros
 mite 80/ios
 mk++
 mklinux
-mlflow
-mlr
 moblin
 mockup
 modulos
@@ -764,7 +730,6 @@ nimblex
 nimbus
 nintendos
 nitix
-nlp
 node os
 nomad linux
 nonux
@@ -780,17 +745,13 @@ ntdios
 nubuntu
 nucleus
 nuclinux
-numpy
 nuxone
-nvidia dali
 o-net
 oaesis
 oasis
 oberon
-object tracking
 objex
 ocnos
-ocr
 ocularis
 odin
 ola dom
@@ -802,11 +763,9 @@ oncore
 onebase linux
 opal
 open progex
-openai
 openartist
 openbeos
 openbsd
-opencv
 opendarwin
 openlab
 openlinux
@@ -849,7 +808,6 @@ paipix
 pakos
 paldo
 palm os
-pandas
 papl
 parabola
 parallelknoppix
@@ -897,24 +855,18 @@ plan 9
 pld
 plex86
 plop linux
-plotly
-plotly.express
 pm_sz_os
 pocket linux
 pocketpc 2003
 poseidon
 posted
-power bi
 power desktop
-powerbi
 powermax
 poweros
 powersx
 powerux
 pozix linux
 pqui
-prefect
-presto
 privatix
 prodos
 progeny
@@ -933,9 +885,6 @@ pulsar linux
 puppy
 pure
 puredyne
-pymc
-pymc3
-pytorch
 qdos
 qilinux
 qimo
@@ -946,22 +895,17 @@ quantian
 qubes os
 radios
 raidiator
-random forest
-rapidminer
 raspbian
 rbasic
 rcos
 rcosjava
 rdos
 reactos
-readr
 real-32
 realogy real time architekt
 rebol-ios
-recurrent neural networks
 red flag
 red hat
-redash
 redhawk linux
 redmond linux
 redox
@@ -977,7 +921,6 @@ rip
 risc os
 rmos
 rms 68k
-rnn
 roadrunner
 rock
 rock linux
@@ -1020,8 +963,6 @@ sauver
 saxenos
 sci.linux
 scientific linux
-scikit-learn
-scipy
 sco linux
 sco openserver
 scope
@@ -1031,7 +972,6 @@ scout
 scp
 scp-ibe
 scrudgeware
-seaborn
 securepoint
 self-r
 sentry firewall
@@ -1043,14 +983,11 @@ sharpos
 shawnos
 shift linux
 shinux
-shiny
-shogun
 sibo
 simplymepis
 sinclair
 sinix
 sintran iii
-sklearn
 skolelinux
 skyos
 slack/390
@@ -1080,8 +1017,6 @@ sos
 sot linux
 source mage
 sp6800
-spacy
-spark
 sparkylinux
 spectra linux
 sphinxos
@@ -1100,7 +1035,6 @@ star-os
 starcos
 starplex ii os
 startcom
-statsmodels
 std
 sting
 stormix
@@ -1130,7 +1064,6 @@ symbian os
 symbos
 symobi
 symphony os
-sympy
 synapse
 system 6
 system 7
@@ -1138,7 +1071,6 @@ system v release
 systemrescue
 t2
 ta-linux
-tableau
 tablix
 tabos
 tails
@@ -1148,16 +1080,12 @@ taos
 taprobane
 techlinux
 tenex
-tensor flow
-tensorflow
 the
-theano
 thinstation
 thix
 threadx
 thrillos
 ti-99 4a
-tidyr
 tilix
 tinfoil hat linux
 tiny core linux
@@ -1173,7 +1101,6 @@ topologilinux
 tops-10
 tops-20
 topsy
-torch
 tornado
 torsion
 tos
@@ -1266,7 +1193,6 @@ warlinux
 wazobia
 webfish linux
 wega
-weka
 whax
 white box
 whitix
@@ -1299,7 +1225,6 @@ winslack
 wizrd
 wolvix
 womp!
-word2vec
 x-evian
 x-kernel
 x/os
@@ -1310,7 +1235,6 @@ xdos
 xenix
 xenoppix
 xfld
-xgboost
 ximian desktop
 xinu
 xmach
@@ -1327,8 +1251,6 @@ yes
 yggdrasil linux
 ylmf os
 yoctix
-yolo
-yolov3
 yoper
 yunos
 z-vm
@@ -1348,4 +1270,3 @@ zonecd
 zorin os
 zotos
 zrts 8000
-сonvolutional neural network2k
