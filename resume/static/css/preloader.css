@@ -11,5 +11,5 @@
 
 .preloader__image {
     height: 100%;
-    background: url('../gif/preloader.gif') no-repeat 50%;
+    background: url('../gif/loader.svg') no-repeat 50%;
 }
