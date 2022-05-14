@@ -3,6 +3,12 @@ const iconClasses = {
     caretDown: 'bi bi-caret-down-fill',
 };
 
+const SKILLS = ['Языки программирования', 'Языки описания внешнего вида страницы',
+                'Языки разметки', 'СУБД', 'Операционные системы', 'Системы контроля версий',
+                'Технологии IOS', 'Технологии Android', 'ML, Data Science/Analysis',
+                'GameDev', 'Технологии и методы тестирования', 'Администрирование',
+                'DevOps', 'Технологии Frontend-разработки', 'Технологии Backend-разработки'];
+
 (() => {
     $('#apply_button').click(() => {
         $.ajax({
@@ -51,6 +57,7 @@ insertInfo = (response) => {
             experience: resume.experience,
         };
         const skills = resume.skills;
+
         $('#resumes').append(`
           <div class="filename">${response.filenames[i]}</div>
           <span class="detail" id="detail_button_${i}">Подробнее <i id="bi_${i}" class="${iconClasses.caretDown}"></i></span>
@@ -78,7 +85,7 @@ toggleInfo = (event) => {
 
 getGeneralInfo = (info) => {
     return `
-        <div>Общая информация</div>
+        <div class="subtitle">Общая информация</div>
         <ul>
           ${info.name       ? `<li>Имя: ${info.name}</li>` : ''}
           ${info.age        ? `<li>Возраст: ${info.age} ${getWordByYear(info.age)}</li>` : ''}
@@ -86,36 +93,27 @@ getGeneralInfo = (info) => {
           ${info.phone      ? `<li>Телефон: ${info.phone}</li>` : ''}
           ${info.academies.length  ? `<li>Оконченные учебные заведения:</li>
                                       <ul>${info.academies.reduce((str, academy) => str + `<li>${academy}</li>`, '')}</ul>`
-                                   : ''
-          }
+                                   : ''}
           ${info.experience ? `<li>Опыт работы: ${info.experience} ${getWordByYear(parseInt(info.experience))}</li>` : ''}
         </ul>
     `;
 };
 
-getSkills = (info) => {
+getSkills = (obj) => {
+    const lis = Object.keys(obj).reduce((res, key, i) =>
+        obj[key].length ? res + `<li>${SKILLS[i]}: ${obj[key].join(', ')}</li>` : res + '', ''
+    );
     return `
-        <div>Информационные технологии</div>
-        <ul>
-          ${info.name       ? `<li>Имя: ${info.name}</li>` : ''}
-          ${info.age        ? `<li>Возраст: ${info.age} ${getWordByYear(info.age)}</li>` : ''}
-          ${info.email      ? `<li>Email: ${info.email}</li>` : ''}
-          ${info.phone      ? `<li>Телефон: ${info.phone}</li>` : ''}
-          ${info.academies  ? `<li>Оконченные учебные заведения:</li>
-                               <ul>${info.academies.reduce((str, academy) => str + `<li>${academy}</li>`, '')}</ul>`
-                            : ''
-          }
-          ${info.experience ? `<li>Опыт работы: ${info.experience} ${getWordByYear(parseInt(info.experience))}</li>` : ''}
-        </ul>
+      <div class="subtitle">Информационные технологии</div>
+      <ul>${lis}</ul>
     `;
 };
 
-anyKey = (info) => {
-    return Object.keys(info).some((key) => {
+anyKey = (info) => Object.keys(info).some(
+    (key) => {
         if (Array.isArray(info[key])) return info[key].length;
         return info[key];
-    })
-};
+    });
 
 getWordByYear = (number) => {
     const words = ['год', 'года', 'лет'];
