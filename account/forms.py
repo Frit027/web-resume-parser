@@ -40,6 +40,8 @@ class UserRegistrationForm(forms.ModelForm):
         cd = self.cleaned_data
         if len(cd['password']) < 8:
             raise forms.ValidationError('Минимальная длина пароля — 8 символов.')
+        if cd['password'].isdigit():
+            raise forms.ValidationError('Введенный пароль состоит только из цифр.')
         if cd['password'] != cd['password2']:
             raise forms.ValidationError('Пароли не совпадают.')
         return cd['password2']
@@ -56,11 +58,21 @@ class CustomLoginForm(AuthenticationForm):
 
 
 class PasswordChangingForm(PasswordChangeForm):
-    old_password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control'}),
-                                   label='Старый пароль')
-    new_password1 = forms.CharField(max_length=100,
-                                    widget=forms.PasswordInput(attrs={'class': 'form-control'}),
-                                    label='Новый пароль')
-    new_password2 = forms.CharField(max_length=100,
-                                    widget=forms.PasswordInput(attrs={'class': 'form-control'}),
-                                    label='Повторите новый пароль')
+    old_password = forms.CharField(label='Старый пароль',
+                                   widget=forms.PasswordInput(
+                                       attrs={'class': 'form-control',
+                                              'id': 'old_password',
+                                              'placeholder': 'Старый пароль'}
+                                   ))
+    new_password1 = forms.CharField(label='Новый пароль',
+                                    widget=forms.PasswordInput(
+                                        attrs={'class': 'form-control',
+                                               'id': 'new_password1',
+                                               'placeholder': 'Новый пароль'}
+                                    ))
+    new_password2 = forms.CharField(label='Повторите новый пароль',
+                                    widget=forms.PasswordInput(
+                                        attrs={'class': 'form-control',
+                                               'id': 'new_password2',
+                                               'placeholder': 'Пароль еще раз'}
+                                    ))
