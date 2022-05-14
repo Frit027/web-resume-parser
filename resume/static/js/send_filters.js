@@ -51,11 +51,13 @@ insertInfo = (response) => {
             experience: resume.experience,
         };
         const skills = resume.skills;
-
         $('#resumes').append(`
-            <div class="filename">${response.filenames[i]}</div>
-            <span class="detail" id="detail_button_${i}">Подробнее <i id="bi_${i}" class="${iconClasses.caretDown}"></i></span>
+          <div class="filename">${response.filenames[i]}</div>
+          <span class="detail" id="detail_button_${i}">Подробнее <i id="bi_${i}" class="${iconClasses.caretDown}"></i></span>
+          <div class="resume-info" id="info_${i}">
             ${anyKey(generalInfo) ? getGeneralInfo(generalInfo, i) : ''}
+            ${anyKey(skills) ? getSkills(skills, i) : ''}
+          </div>
         `);
 
         $(`#detail_button_${i}`).on('click', { i }, toggleInfo);
@@ -74,29 +76,49 @@ toggleInfo = (event) => {
     }
 };
 
+getGeneralInfo = (info) => {
+    return `
+        <div>Общая информация</div>
+        <ul>
+          ${info.name       ? `<li>Имя: ${info.name}</li>` : ''}
+          ${info.age        ? `<li>Возраст: ${info.age} ${getWordByYear(info.age)}</li>` : ''}
+          ${info.email      ? `<li>Email: ${info.email}</li>` : ''}
+          ${info.phone      ? `<li>Телефон: ${info.phone}</li>` : ''}
+          ${info.academies.length  ? `<li>Оконченные учебные заведения:</li>
+                                      <ul>${info.academies.reduce((str, academy) => str + `<li>${academy}</li>`, '')}</ul>`
+                                   : ''
+          }
+          ${info.experience ? `<li>Опыт работы: ${info.experience} ${getWordByYear(parseInt(info.experience))}</li>` : ''}
+        </ul>
+    `;
+};
+
+getSkills = (info) => {
+    return `
+        <div>Информационные технологии</div>
+        <ul>
+          ${info.name       ? `<li>Имя: ${info.name}</li>` : ''}
+          ${info.age        ? `<li>Возраст: ${info.age} ${getWordByYear(info.age)}</li>` : ''}
+          ${info.email      ? `<li>Email: ${info.email}</li>` : ''}
+          ${info.phone      ? `<li>Телефон: ${info.phone}</li>` : ''}
+          ${info.academies  ? `<li>Оконченные учебные заведения:</li>
+                               <ul>${info.academies.reduce((str, academy) => str + `<li>${academy}</li>`, '')}</ul>`
+                            : ''
+          }
+          ${info.experience ? `<li>Опыт работы: ${info.experience} ${getWordByYear(parseInt(info.experience))}</li>` : ''}
+        </ul>
+    `;
+};
+
+anyKey = (info) => {
+    return Object.keys(info).some((key) => {
+        if (Array.isArray(info[key])) return info[key].length;
+        return info[key];
+    })
+};
+
 getWordByYear = (number) => {
     const words = ['год', 'года', 'лет'];
     const cases = [2, 0, 1, 1, 1, 2];
     return words[(number % 100 > 4 && number % 100 < 20) ? 2 : cases[(number % 10 < 5) ? number % 10 : 5]];
 };
-
-getGeneralInfo = (info, i) => {
-    return `
-        <div class="resume-info" id="info_${i}">
-            <div>Общая информация</div>
-            <ul>
-              ${info.name       ? `<li>Имя: ${info.name}</li>` : ''}
-              ${info.age        ? `<li>Возраст: ${info.age} ${getWordByYear(info.age)}</li>` : ''}
-              ${info.email      ? `<li>Email: ${info.email}</li>` : ''}
-              ${info.phone      ? `<li>Телефон: ${info.phone}</li>` : ''}
-              ${info.academies  ? `<li>Оконченные учебные заведения:</li>
-                                   <ul>${info.academies.reduce((str, academy) => str + `<li>${academy}</li>`, '')}</ul>`
-                                : ''
-              }
-              ${info.experience ? `<li>Опыт работы: ${info.experience} ${getWordByYear(parseInt(info.experience))}</li>` : ''}
-            </ul>
-        </div>
-    `;
-};
-
-anyKey = (info) => Object.keys(info).some((key) => info[key]);
