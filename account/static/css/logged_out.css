@@ -1,0 +1,21 @@
+.card {
+    margin: 12rem auto 0 auto;
+    max-width: 45rem;
+}
+
+.card-body {
+    background: aliceblue;
+}
+
+.card-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.card-header, .card-footer {
+    background: #93D3FB;
+}
+
+.text-muted {
+    font-size: 0.8rem;
+}

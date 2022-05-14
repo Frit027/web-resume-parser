@@ -1,8 +1,24 @@
 {% extends "base.html" %}
 
-{% block title %}Logged out{% endblock %}
+{% load static %}
+
+{% block title %}Выход{% endblock %}
+
+{% block stylesheet %}
+  {# my styles #}
+  <link rel="stylesheet" href="{% static 'css/logged_out.css' %}">
+{% endblock %}
 
 {% block content %}
-    <h1>Выход</h1>
-    <p>Вы успешно вышли из системы. Вы можете <a href="{% url "login" %}">войти снова</a>.</p>
+  <div class="card text-center stroke">
+    <div class="card-header">ResumeParser</div>
+    <div class="card-body">
+      <img class="mb-2" src="{% static 'img/logo.png' %}" alt="logo" width="64" height="64">
+      <p class="card-text">Вы успешно вышли из аккаунта.</p>
+      <a href="{% url "login" %}" class="btn btn-primary">Войти снова</a>
+    </div>
+    <div class="card-footer">
+      <span class="text-muted">© РТУ МИРЭА 2022</span>
+    </div>
+  </div>
 {% endblock %}
