@@ -15,6 +15,18 @@
 {% endblock %}
 
 {% block content %}
+  <div class="mb-3">
+    {% if request.user.is_authenticated%}
+      {% if request.user.first_name %}
+        Привет, {{ request.user.first_name }}!
+      {% else %}
+        Привет, {{ request.user.username }}!
+      {% endif %}
+    {% elif not request.user.is_authenticated %}
+      <a href="{% url "login" %}">Log-in</a>
+    {% endif %}
+  </div>
+
   <div id="resumes">
     <h5>Ваши резюме</h5>
     {% if resumes %}
