@@ -12,10 +12,9 @@ class DocumentForm(forms.ModelForm):
         model = Resume
         fields = ('file_field',)
 
-    def clean(self):
+    def clean_file_field(self):
         for file in self.files.getlist('file_field'):
             extension = os.path.splitext(file.name)[1][1:].upper()
-            if extension in self.__ALLOWED_TYPES:
-                return file
-            else:
-                raise forms.ValidationError(f"Разрешены файлы форматов {', '.join(self.__ALLOWED_TYPES)}.")
+            if extension not in self.__ALLOWED_TYPES:
+                raise forms.ValidationError(f'Разрешены файлы форматов PDF и DOCX.')
+        return self.files.getlist('file_field')
