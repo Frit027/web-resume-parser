@@ -8,7 +8,7 @@
   <form class="login-register-form stroke" action="{% url 'login' %}" method="post">
     {% csrf_token %}
 
-    <img class="mb-4" src="{% static 'img/logo.png' %}" alt="logo" width="64" height="64">
+    <img class="mb-4" src="{% static 'img/logo.svg' %}" alt="logo" width="64" height="64">
 
     <h1 class="h3 mb-3 fw-normal">Войдите</h1>
 
@@ -34,7 +34,5 @@
         Пожалуйста, введите правильные имя пользователя и пароль. Оба поля могут быть чувствительны к регистру.
       </div>
     {% endif %}
-
-    <p class="mt-5 mb-3 text-muted">© РТУ МИРЭА 2022</p>
   </form>
 {% endblock %}
