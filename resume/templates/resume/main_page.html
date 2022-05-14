@@ -7,6 +7,7 @@
 {% block stylesheet %}
   {# my styles #}
   <link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+  <link rel="stylesheet" href="{% static 'css/preloader.css' %}">
 {% endblock %}
 
 {% block script %}
@@ -45,13 +46,21 @@
     {% endif %}
   </div>
 
-  <form action="." method="post" enctype="multipart/form-data">
+  <form id="files_form" action="." method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form }}
+    {{ form.file_field }}
+
+    {% if form.errors %}
+      <div class="mt-3">
+        {% for error in form.file_field.errors %}
+          <div class="error">{{error}}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
     <div class="text-center">
       <button class="btn btn-primary upload_btn" type="submit">Загрузить</button>
     </div>
   </form>
 
-  <script src="{% static 'js/analysis.js' %}"></script>
+  <script src="{% static 'js/main_page.js' %}"></script>
 {% endblock %}
