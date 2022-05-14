@@ -5,7 +5,7 @@
 {% block title %}Вход{% endblock %}
 
 {% block content %}
-  <form class="login-register-form" action="{% url 'login' %}" method="post">
+  <form class="login-register-form stroke" action="{% url 'login' %}" method="post">
     {% csrf_token %}
 
     <img class="mb-4" src="{% static 'img/logo.png' %}" alt="logo" width="64" height="64">
