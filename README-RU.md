@@ -37,5 +37,7 @@ ____
 - Регулярные выражения 
 - spaCy 
 - Natasha
+
 Ниже представлена схема работы парсера.
-![Схема парсера](https://drive.google.com/file/d/1mIJDAe35d3X7pXgXXJY3v_UpD4RIUDt0/view?usp=sharing)
+
+![Схема парсера](assets/scheme-en.png)
