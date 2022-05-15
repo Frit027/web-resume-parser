@@ -6,7 +6,7 @@ from ..models import (ProgramLang, SkillWithSlash, OperatingSystem, MarkupLang,
 
 
 class SkillsExtractor:
-    __PATTERN_SKILL = re.compile(r'[a-zA-Zéöá\d./+*#@:′!-]+(?![а-яА-Я])(?: [a-zA-Zéöá\d./+*#@:′!-]+)*')
+    __PATTERN_SKILL = re.compile(r'[a-zA-Zéöá\d./+*#@′!-]+(?![а-яА-Я])(?: [a-zA-Zéöá\d./+*#@′!-]+)*')
     __PATTERN_DRIVING = re.compile(r'водительск(их|ие)|права категории')
     __PATTERN_DRIVING_CATEGORY = re.compile(r'[bcd]')
     __START_WRONG_CHARACTERS = ('.', ':', '-', '+', '/')
@@ -46,7 +46,7 @@ class SkillsExtractor:
         return list(filter(lambda x:
                            any(c in x for c in ascii_letters)
                            and not x.isdigit()
-                           and '://' not in x and 'www' not in x
+                           and '//' not in x and 'www' not in x
                            and all(c != x for c in self.__START_WRONG_CHARACTERS),
                            words))
 
