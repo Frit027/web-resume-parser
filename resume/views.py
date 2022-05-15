@@ -53,12 +53,8 @@ def analysis(request):
         skills_dict = {skill: request.POST.getlist(f'skills[{skill}][]') for skill in SKILLS}
 
         resumes = Resume.get_resumes_by_filters(request.user, age, experience, levels, skills_dict)
-        [print(r.data) for r in resumes]
-        print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
         return JsonResponse({
             'filenames': Resume.get_filenames_from_resumes(resumes),
             'resumes': [resume.data for resume in resumes]
         })
-    else:
-        pass
     return render(request, 'resume/analysis.html', {'section': 'analysis', 'data': data})
