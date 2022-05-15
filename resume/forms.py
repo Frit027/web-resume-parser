@@ -15,6 +15,6 @@ class DocumentForm(forms.ModelForm):
     def clean_file_field(self):
         for file in self.files.getlist('file_field'):
             extension = os.path.splitext(file.name)[1][1:].upper()
-            if extension not in self.__ALLOWED_TYPES:
+            if extension not in self.__ALLOWED_TYPES or not extension:
                 raise forms.ValidationError(f'Разрешены файлы форматов PDF и DOCX.')
         return self.files.getlist('file_field')
