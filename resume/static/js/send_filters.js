@@ -87,21 +87,21 @@ getGeneralInfo = (info) => {
     return `
         <div class="subtitle">Общая информация</div>
         <ul>
-          ${info.name       ? `<li>Имя: ${info.name}</li>` : ''}
-          ${info.age        ? `<li>Возраст: ${info.age} ${getWordByYear(info.age)}</li>` : ''}
-          ${info.email      ? `<li>Email: ${info.email}</li>` : ''}
-          ${info.phone      ? `<li>Телефон: ${info.phone}</li>` : ''}
-          ${info.academies.length  ? `<li>Оконченные учебные заведения:</li>
+          ${info.name       ? `<li><span class="text-primary">Имя:</span> ${info.name}</li>` : ''}
+          ${info.age        ? `<li><span class="text-primary">Возраст:</span> ${info.age} ${getWordByYear(info.age)}</li>` : ''}
+          ${info.email      ? `<li><span class="text-primary">Email:</span> ${info.email}</li>` : ''}
+          ${info.phone      ? `<li><span class="text-primary">Телефон:</span> ${info.phone}</li>` : ''}
+          ${info.academies.length  ? `<li><span class="text-primary">Оконченные учебные заведения:</span></li>
                                       <ul>${info.academies.reduce((str, academy) => str + `<li>${academy}</li>`, '')}</ul>`
                                    : ''}
-          ${info.experience ? `<li>Опыт работы: ${info.experience} ${getWordByYear(parseInt(info.experience))}</li>` : ''}
+          ${info.experience ? `<li><span class="text-primary">Опыт работы:</span> ${info.experience} ${getWordByYear(parseInt(info.experience))}</li>` : ''}
         </ul>
     `;
 };
 
 getSkills = (obj) => {
     const lis = Object.keys(obj).reduce((res, key, i) =>
-        obj[key].length ? res + `<li>${SKILLS[i]}: ${obj[key].join(', ')}</li>` : res + '', ''
+        obj[key].length ? res + `<li><span class="text-primary">${SKILLS[i]}:</span> ${obj[key].join(', ')}</li>` : res + '', ''
     );
     return `
       <div class="subtitle">Информационные технологии</div>
