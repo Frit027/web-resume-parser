@@ -41,4 +41,4 @@
 ![Схема парсера](assets/scheme-ru.png)
 
 ## Демонстрация
-![Схема парсера](assets/demonstration.gif)
+![Демонстрация](assets/demonstration.gif)
