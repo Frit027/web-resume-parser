@@ -39,7 +39,7 @@ computer skills (programming languages, frameworks, etc.) and puts it in a JSON 
 - [Natasha](https://github.com/natasha/natasha)
 
 #### Parser schema
-![Parser schema](assets/scheme-ru.png)
+![Parser schema](assets/scheme-en.png)
 
 ## Demonstration
 ![Demonstration](assets/demonstration.gif)
