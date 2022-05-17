@@ -47,7 +47,14 @@ getSelected = () => ({
 );
 
 insertInfo = (response) => {
-    $('#resumes').html('');
+    const resumesDiv = $('#resumes');
+
+    resumesDiv.html('');
+    if (!response.filenames.length) {
+        resumesDiv.append('<p class="text-center mt-4 empty-result">Ничего не найдено</p>');
+        return;
+    }
+
     response.resumes.forEach((resume, i) => {
         const generalInfo = {
             name:       resume.name,
@@ -59,7 +66,7 @@ insertInfo = (response) => {
         };
         const skills = resume.skills;
 
-        $('#resumes').append(`
+        resumesDiv.append(`
           <div class="filename">${response.filenames[i]}</div>
           <span class="detail" id="detail_button_${i}">Подробнее <i id="bi_${i}" class="${iconClasses.caretDown}"></i></span>
           <div class="resume-info" id="info_${i}">
