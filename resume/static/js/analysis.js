@@ -54,6 +54,7 @@ insertInfo = (response) => {
         resumesDiv.append('<p class="text-center mt-4 empty-result">Ничего не найдено</p>');
         return;
     }
+    resumesDiv.append('<p class="mt-3 mb-3 relevance-text">Результаты показаны по убыванию релевантности резюме запросу</p>');
 
     response.resumes.forEach((resume, i) => {
         const generalInfo = {
@@ -70,8 +71,8 @@ insertInfo = (response) => {
           <div class="filename">${resume.filename}</div>
           <span class="detail" id="detail_button_${i}">Подробнее <i id="bi_${i}" class="${iconClasses.caretDown}"></i></span>
           <div class="resume-info" id="info_${i}">
-            ${anyKey(generalInfo) ? getGeneralInfo(generalInfo, i) : ''}
-            ${anyKey(skills) ? getSkills(skills, i) : ''}
+            ${anyKey(generalInfo) ? getGeneralInfo(generalInfo) : ''}
+            ${anyKey(skills) ? getSkills(skills, response.request_skills) : ''}
           </div>
         `);
 
@@ -106,9 +107,9 @@ getGeneralInfo = (info) => {
     `;
 };
 
-getSkills = (obj) => {
+getSkills = (obj, req_skills) => {
     const lis = Object.keys(obj).reduce((res, key, i) =>
-        obj[key].length ? res + `<li><span class="text-primary">${SKILLS[i]}:</span> ${obj[key].join(', ')}</li>`
+        obj[key].length ? res + `<li><span class="text-primary">${SKILLS[i]}:</span> ${highlighting(obj[key], req_skills)}</li>`
                         : res + '', ''
     );
     return `
@@ -122,6 +123,14 @@ anyKey = (info) => Object.keys(info).some(
         if (Array.isArray(info[key])) return info[key].length;
         return info[key];
     });
+
+highlighting = (skills, req_skills) => {
+    skills = skills.map((skill) => {
+        if (req_skills.includes(skill)) return `<span class="skill">${skill}</span>`;
+        return skill;
+    });
+    return skills.join(', ');
+};
 
 getWordByYear = (number) => {
     const words = ['год', 'года', 'лет'];
