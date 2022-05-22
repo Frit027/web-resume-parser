@@ -45,7 +45,7 @@ def main_page(request):
 
 @login_required
 def analysis(request):
-    data = Resume.get_data(request.user)
+    selectors = Resume.get_selectors(request.user)
     if request.method == 'POST':
         levels = request.POST.getlist('levels[]')
         age = request.POST['age']
@@ -57,4 +57,4 @@ def analysis(request):
             'filenames': Resume.get_filenames_from_resumes(resumes),
             'resumes': [resume.data for resume in resumes]
         })
-    return render(request, 'resume/analysis.html', {'section': 'analysis', 'data': data})
+    return render(request, 'resume/analysis.html', {'section': 'analysis', 'data': selectors})

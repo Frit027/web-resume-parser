@@ -99,7 +99,7 @@ class Resume(models.Model):
         return set(resumes_by_skills) & set(resumes_by_levels) & set(resumes_by_exp) & set(resumes_by_age)
 
     @staticmethod
-    def get_data(user):
+    def get_selectors(user):
         data = {}
         for resume in Resume.__get_all_resumes_json(user):
             data['levels'] = resume['education']['levels'] + data.get('levels', [])
