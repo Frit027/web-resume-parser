@@ -21,20 +21,8 @@ class Resume(models.Model):
             return json_lib.load(f)
 
     @staticmethod
-    def __get_all_resumes_json(user):
-        resumes_json = []
-        for resume in user.resume_set.all():
-            with open(resume.json.path, 'r', encoding='utf-8') as f:
-                resumes_json.append(json_lib.load(f))
-        return resumes_json
-
-    @staticmethod
     def __get_all_resumes(user):
-        resumes = {}
-        for resume in user.resume_set.all():
-            with open(resume.json.path, 'r', encoding='utf-8') as f:
-                resumes[resume] = json_lib.load(f)
-        return resumes
+        return {resume: resume.data for resume in user.resume_set.all()}
 
     @staticmethod
     def __filter_by_age(interval_ages, resumes):
@@ -101,7 +89,7 @@ class Resume(models.Model):
     @staticmethod
     def get_selectors(user):
         data = {}
-        for resume in Resume.__get_all_resumes_json(user):
+        for resume in Resume.__get_all_resumes(user).values():
             data['levels'] = resume['education']['levels'] + data.get('levels', [])
             for skill in SKILLS:
                 data[skill] = resume['skills'][skill] + data.get(skill, [])
@@ -118,11 +106,11 @@ class Resume(models.Model):
 
     @staticmethod
     def get_filenames(user):
-        return [resume.filename for resume in Resume.__get_all_resumes(user)]
+        return [resume.filename for resume in user.resume_set.all()]
 
     @staticmethod
     def remove_files(user):
-        for resume in Resume.__get_all_resumes(user):
+        for resume in user.resume_set.all():
             os.remove(resume.file.path)
             os.remove(resume.json.path)
             resume.delete()
