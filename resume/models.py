@@ -96,13 +96,29 @@ class Resume(models.Model):
         return {k: sorted(list(set(v))) for k, v in data.items()}
 
     @staticmethod
-    def get_json_response(resumes):
+    def __get_relevance(resume_skills, req_skills, resume_levels, req_levels):
+        resume_sk_set = set(Resume.__list_merge(resume_skills.values()))
+        request_sk_set = set(Resume.__list_merge(req_skills.values()))
+        if not request_sk_set and not req_levels:
+            return 100
+
+        numerator = len(set(resume_sk_set) & set(request_sk_set)) + len(set(resume_levels) & set(req_levels))
+        denominator = len(request_sk_set) + len(req_levels)
+        return int((numerator / denominator) * 100)
+
+    @staticmethod
+    def get_json_response(resumes, req_levels, req_skills):
         response = []
         for resume in resumes:
             data = resume.data
             data['filename'] = resume.filename
+            data['relevance'] = Resume.__get_relevance(resume.data['skills'], req_skills,
+                                                       resume.data['education']['levels'], req_levels)
             response.append(data)
-        return response
+        return sorted(response, key=lambda obj: obj['relevance'], reverse=True)
+
+    @staticmethod
+    def get_skills(req_skills): return Resume.__list_merge(req_skills.values())
 
     @staticmethod
     def get_filenames(user):
