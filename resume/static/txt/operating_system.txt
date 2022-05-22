@@ -409,7 +409,6 @@ gnu hurd
 gnubie linux
 gnulinex
 gnustep
-go
 goah
 goblinx
 gobolinux
