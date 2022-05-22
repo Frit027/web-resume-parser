@@ -33,3 +33,15 @@
 .empty-result {
     font-size: 1.2rem;
 }
+
+.relevance-text {
+    font-style: italic;
+}
+
+.text-primary {
+    font-weight: 500;
+}
+
+.skill {
+    color: #FF6B18;
+}
