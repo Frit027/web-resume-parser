@@ -54,6 +54,7 @@ def analysis(request):
 
         resumes = Resume.get_resumes_by_filters(request.user, age, experience, levels, skills_dict)
         return JsonResponse({
-            'resumes': Resume.get_json_response(resumes)
+            'resumes': Resume.get_json_response(resumes, levels, skills_dict),
+            'request_skills': Resume.get_skills(skills_dict)
         })
     return render(request, 'resume/analysis.html', {'section': 'analysis', 'data': selectors})
