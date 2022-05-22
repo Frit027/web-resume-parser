@@ -50,7 +50,7 @@ insertInfo = (response) => {
     const resumesDiv = $('#resumes');
 
     resumesDiv.html('');
-    if (!response.filenames.length) {
+    if (!response.resumes.length) {
         resumesDiv.append('<p class="text-center mt-4 empty-result">Ничего не найдено</p>');
         return;
     }
@@ -67,7 +67,7 @@ insertInfo = (response) => {
         const skills = resume.skills;
 
         resumesDiv.append(`
-          <div class="filename">${response.filenames[i]}</div>
+          <div class="filename">${resume.filename}</div>
           <span class="detail" id="detail_button_${i}">Подробнее <i id="bi_${i}" class="${iconClasses.caretDown}"></i></span>
           <div class="resume-info" id="info_${i}">
             ${anyKey(generalInfo) ? getGeneralInfo(generalInfo, i) : ''}
