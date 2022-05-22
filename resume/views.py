@@ -38,7 +38,7 @@ def main_page(request):
         {
             'section': 'main',
             'form': form,
-            'resumes': Resume.get_filenames_by_user(request.user)
+            'resumes': Resume.get_filenames(request.user)
         }
     )
 
@@ -54,7 +54,6 @@ def analysis(request):
 
         resumes = Resume.get_resumes_by_filters(request.user, age, experience, levels, skills_dict)
         return JsonResponse({
-            'filenames': Resume.get_filenames_from_resumes(resumes),
-            'resumes': [resume.data for resume in resumes]
+            'resumes': Resume.get_json_response(resumes)
         })
     return render(request, 'resume/analysis.html', {'section': 'analysis', 'data': selectors})

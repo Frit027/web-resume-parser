@@ -108,11 +108,16 @@ class Resume(models.Model):
         return {k: sorted(list(set(v))) for k, v in data.items()}
 
     @staticmethod
-    def get_filenames_from_resumes(resumes):
-        return [resume.filename for resume in resumes]
+    def get_json_response(resumes):
+        response = []
+        for resume in resumes:
+            data = resume.data
+            data['filename'] = resume.filename
+            response.append(data)
+        return response
 
     @staticmethod
-    def get_filenames_by_user(user):
+    def get_filenames(user):
         return [resume.filename for resume in Resume.__get_all_resumes(user)]
 
     @staticmethod
