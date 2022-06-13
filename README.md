@@ -18,10 +18,10 @@ computer skills (programming languages, frameworks, etc.) and puts it in a JSON 
 1. Clone this repository to your directory.
 2. If necessary, change the database connection settings in the file [my.cnf](my.cnf).
 3. Run the following commands:
-   1. `python manage.py makemigrations`
-   2. `python manage.py migrate`
+   - `python manage.py makemigrations`
+   - `python manage.py migrate`
 4. Insert the data from the files in [resume/static/txt](resume/static/txt) into the appropriate tables and run the command:
-   1. `python manage.py runserver`
+   - `python manage.py runserver`
 
 ## Usage
 Web service access link: [http://yurov.pythonanywhere.com/](http://yurov.pythonanywhere.com/)
