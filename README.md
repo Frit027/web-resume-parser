@@ -23,22 +23,27 @@ computer skills (programming languages, frameworks, etc.) and puts it in a JSON 
 4. Insert the data from the files in [resume/static/txt](resume/static/txt) into the appropriate tables and run the command:
    1. `python manage.py runserver`
 
+## Usage
+Web service access link: [http://yurov.pythonanywhere.com/](http://yurov.pythonanywhere.com/)
+
 ## Technologies
 ### Backend
-- Python 3.8 
-- Django 4.0 
-- MySQL 8.0
+- [Python](https://www.python.org/) `[3.8]`
+- [Django](https://www.djangoproject.com/) `[4.0]`
+- [MySQL](https://www.mysql.com/) `[8.0]`
 ### Frontend
-- HTML5 
-- [Django template language](https://docs.djangoproject.com/en/4.0/ref/templates/language/)
-- CSS3 
-- JavaScript (jQuery)
+- [HTML5](https://dev.w3.org/html5/html-author/)
+- [Django template language](https://docs.djangoproject.com/en/4.0/ref/templates/language/) `[4.0]`
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) `[ES9]`
+- [jQuery](https://jquery.com/) `[3.6.0]`
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Bootstrap](https://getbootstrap.com/) `[5.1.3]`
 ### Parser (NLP)
-- Regular expressions
-- [spaCy](https://spacy.io/)
-- [Natasha](https://github.com/natasha/natasha)
+- [Regular expressions](https://docs.python.org/3/library/re.html) `[3.8]` - search for years, abbreviations, phone numbers, etc.
+- [spaCy](https://spacy.io/) `[3.3]` - email and name recognition
+- [Natasha](https://github.com/natasha/natasha) `[1.4.0]` - recognition of educational institutions
 
-#### Parser schema
+### Parser schema
 ![Parser schema](assets/scheme-en.png)
 
 ## Demonstration
