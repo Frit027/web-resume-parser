@@ -3,7 +3,7 @@
         <a href="README.md"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/us.svg" width="32" alt="Английский язык" title="Английский язык"/></a>
         <code><a href="#"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/ru.svg" width="32" alt="Русский язык" title="Русский язык"/></a></code>
     </div>
-    penco
+    Web Resume Parser
 </h1>
 
 ## Описание
