@@ -1,4 +1,10 @@
-<h1 align="center">Web Resume Parser</h1>
+<h1>
+    <div align="right">
+        <a href="README.md"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/us.svg" width="32" alt="Английский язык" title="Английский язык"/></a>
+        <code><a href="#"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/ru.svg" width="32" alt="Русский язык" title="Русский язык"/></a></code>
+    </div>
+    penco
+</h1>
 
 ## Описание
 ### Общее описание
@@ -12,6 +18,9 @@
 Парсер извлекает такую информацию, как имя, email, номер телефона, степень образования, оконченные учебные заведения,
 опыт работы, а также список имеющихся компьютерных навыков (языки программирования, фреймворки и т.д.) и помещает её
 в JSON-файл.
+
+## Демонстрация
+![Демонстрация](assets/demonstration.gif)
 
 ## Установка
 1. Клонируйте данный репозиторий в вашу директорию.
@@ -44,6 +53,3 @@
 
 ### Схема парсера
 ![Схема парсера](assets/scheme-ru.png)
-
-## Демонстрация
-![Демонстрация](assets/demonstration.gif)

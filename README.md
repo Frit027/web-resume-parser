@@ -1,4 +1,10 @@
-<h1 align="center">Web Resume Parser</h1>
+<h1>
+    <div align="right">
+        <code><a href="#"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/us.svg" width="32" alt="English" title="English"/></a></code>
+        <a href="README-RU.md"><img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/ru.svg" width="32" alt="Russian" title="Russian"/></a>
+    </div>
+    Web Resume Parser
+</h1>
 
 ## Description
 ### General description
@@ -13,6 +19,9 @@ can select resumes according to certain criteria.
 The parser extracts information such as name, email, phone number, degree of education,
 completed educational institutions, work experience, as well as a list of available
 computer skills (programming languages, frameworks, etc.) and puts it in a JSON file.
+
+## Demonstration
+![Demonstration](assets/demonstration.gif)
 
 ## Getting Started
 1. Clone this repository to your directory.
@@ -45,6 +54,3 @@ Web service access link: [http://yurov.pythonanywhere.com/](http://yurov.pythona
 
 ### Parser schema
 ![Parser schema](assets/scheme-en.png)
-
-## Demonstration
-![Demonstration](assets/demonstration.gif)
